@@ -6,7 +6,7 @@
     width: 100%;
     display: grid;
     height: 60px;
-    grid-template-rows: 60px;
+    grid-template-rows: 40px;
     grid-template-columns: 100px auto 80px 80px 80px;
 }
 .responsive .difu{
@@ -19,6 +19,7 @@
 }
 .responsive .mobile{
     display: flex;
+    cursor: pointer;
     border: 1px solid black;
     height: inherit;
     align-items: center;
@@ -26,6 +27,7 @@
 }
 .responsive .laptop{
     display: flex;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     height: inherit;
@@ -33,6 +35,7 @@
 }
 .responsive .tablet{
     display: flex;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     border: 1px solid black;
