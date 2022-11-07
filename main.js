@@ -91,3 +91,25 @@ menu.addEventListener("click", function(e) {
     }
 })
 
+let menuItems = document.querySelector("#nav-bar-items").childNodes;
+ 
+// for (let  = 0;  < array.length; ++) {
+//     const element = array[];
+    
+// }
+// text-white bg-blue-700 rounded
+
+// menuItems.addEventListener("click", function() {
+//     console.log(this);
+//     this.classList.add("active");
+//     // services.style.backgroundColor = "blue";
+//     // $().classList.remove("active");
+//     // services.classList.add("active");
+// })
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll('nav li a').forEach(link => {
+    if(link.href.includes(`${activePage}`)){
+        document.querySelector("#nav-bar-items a:hover").style.display = "none";
+        link.classList.add("active");
+    }
+});
