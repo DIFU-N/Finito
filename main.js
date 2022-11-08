@@ -14,20 +14,20 @@ mobile.addEventListener("click", function (e) {
     navBar.classList.remove("md:block", "inline-flex", "justify-center", "items-center");
     navBar.classList.add("hidden", "w-full");
     navBar.innerHTML = `
-        <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100">
-            <li>
-                <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded" aria-current="page">Home</a>
-            </li>
-            <li>
-                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded">Services</a>
-            </li>
-            <li>
-                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded">Pricing</a>
-            </li>
-            <li>
-                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded">Contact</a>
-            </li>
-        </ul>
+    <ul id="nav-bar-items"class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100">
+        <li>
+            <a href="/index.html" id="home" class="block py-2 pr-4 pl-3 text-gray-700 rounded">Home</a>
+        </li>
+        <li>
+            <a href="/screens/services.html" id="services" class="block py-2 pr-4 pl-3 text-gray-700 rounded">Services</a>
+        </li>
+        <li>
+            <a href="/screens/pricing.html" id="price" class="block py-2 pr-4 pl-3 text-gray-700 rounded">Pricing</a>
+        </li>
+        <li>
+            <a href="/screens/contact.html" id="cont" class="block py-2 pr-4 pl-3 text-gray-700 rounded">Contact</a>
+        </li>
+    </ul>
     `;
 });
 
@@ -65,20 +65,20 @@ tablet.addEventListener("click", function (e) {
     navBar.classList.remove("md:block", "inline-flex", "justify-center", "items-center");
     navBar.classList.add("hidden", "w-full");
     navBar.innerHTML = `
-        <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100">
-            <li>
-                <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded" aria-current="page">Home</a>
-            </li>
-            <li>
-                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded">Services</a>
-            </li>
-            <li>
-                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded">Pricing</a>
-            </li>
-            <li>
-                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded">Contact</a>
-            </li>
-        </ul>
+    <ul id="nav-bar-items"class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100">
+        <li>
+            <a href="/index.html" id="home" class="block py-2 pr-4 pl-3 text-gray-700 rounded">Home</a>
+        </li>
+        <li>
+            <a href="/screens/services.html" id="services" class="block py-2 pr-4 pl-3 text-gray-700 rounded">Services</a>
+        </li>
+        <li>
+            <a href="/screens/pricing.html" id="price" class="block py-2 pr-4 pl-3 text-gray-700 rounded">Pricing</a>
+        </li>
+        <li>
+            <a href="/screens/contact.html" id="cont" class="block py-2 pr-4 pl-3 text-gray-700 rounded">Contact</a>
+        </li>
+    </ul>
     `;
 });
 
@@ -109,7 +109,6 @@ let menuItems = document.querySelector("#nav-bar-items").childNodes;
 const activePage = window.location.pathname;
 const navLinks = document.querySelectorAll('nav li a').forEach(link => {
     if(link.href.includes(`${activePage}`)){
-        document.querySelector("#nav-bar-items a:hover").style.display = "none";
         link.classList.add("active");
     }
 });
