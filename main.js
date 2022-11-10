@@ -148,3 +148,11 @@ const navLinks = document.querySelectorAll('nav li a').forEach(link => {
         link.classList.add("active");
     }
 });
+
+function itemHover () {
+  document.querySelector("#on-hover").classList.add("opacity-40");
+  // onHover.style.display = "block";
+}
+let itemHoverOut = () => {
+  document.querySelector("#on-hover").classList.remove("opacity-40");
+}
