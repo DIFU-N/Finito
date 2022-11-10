@@ -108,7 +108,27 @@ laptop.addEventListener("click", function (e) {
       </li>
     </ul>
   `;
-
+  browseNow.innerHTML = `
+  <div class="grid grid-cols-[33%_67%] h-[40rem] w-full">
+    <div class="w-100% bg-blue-600 border-solid border-r-2 border-black"></div>
+    <div class="space-y-2 text-left bg-blue-100 pl-56 pt-52 pr-36">
+      <span class="text-3xl text-gray-600">Shop is fun</span>
+      <br>
+      <br>
+      <span class="font-bold text-5xl">BROWSE OUR PREMIUM PRODUCT</span>
+      <br>
+      <br>
+      <p>plenty text going on here for some reason, doesn't really matter to me like that. NBut let me just do it. 
+        One more line, I think. Maybe just another little line, I think</p>
+      <br>
+      <button class=" border-solid border-2 bg-blue-600 p-2 px-6 text-white text-md rounded-3xl hover:bg-white hover:text-black hover:border-solid hover:border-2 hover:py-2 hover:px-6 hover:border-blue-600">Browse Now</button>
+    </div>
+  </div>
+  <!-- <br> -->
+  <div class="w-[27rem] h-[36.5rem] left-32 absolute top-14 border-black border-1 bg-purple-100">
+    A Computer Science Portal
+  </div>
+  `;
 });
 
 menu.addEventListener("click", function(e) {
