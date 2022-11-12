@@ -5,7 +5,8 @@ let mobile = document.querySelector(".mobile"),
 let body = document.querySelector(".main-body"),
     menu = document.querySelector("#menu-btn"),
     navBar = document.querySelector("#nav-bar"),
-    browseNow = document.querySelector("#browse-now");
+    browseNow = document.querySelector("#browse-now"),
+    firstItems = document.querySelector("#first-items");
 
 mobile.addEventListener("click", function (e) {
     e.preventDefault();
@@ -42,6 +43,15 @@ mobile.addEventListener("click", function (e) {
       </div>
     </div>
     `;
+    firstItems.innerHTML = `
+    <div id="on-hover" class="bg-blue-600 border-solid h-[23rem] border-black absolute w-[100%]"> asssxa</div>
+    <div class="border-solid h-[23rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[100%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+      <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+        <span class="text-lg font-bold text-white">Wired Something</span>
+        <p class="italic text-sm text-white">amska</p>
+      </div>
+    </div>
+    `;    
 });
 
 tablet.addEventListener("click", function (e) {
