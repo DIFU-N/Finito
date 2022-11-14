@@ -611,10 +611,6 @@ video {
   position: relative;
 }
 
-.bottom-\[20rem\] {
-  bottom: 20rem;
-}
-
 .left-6 {
   left: 1.5rem;
 }
@@ -631,32 +627,8 @@ video {
   top: 3.5rem;
 }
 
-.top-4 {
-  top: 1rem;
-}
-
-.top-44 {
-  top: 11rem;
-}
-
-.top-\[32rem\] {
-  top: 32rem;
-}
-
-.bottom-\[211rem\] {
-  bottom: 211rem;
-}
-
 .z-50 {
   z-index: 50;
-}
-
-.col-start-1 {
-  grid-column-start: 1;
-}
-
-.col-end-2 {
-  grid-column-end: 2;
 }
 
 .mx-auto {
@@ -676,20 +648,24 @@ video {
   margin-top: 1rem;
 }
 
-.mb-\[24rem\] {
-  margin-bottom: 24rem;
+.mt-\[10rem\] {
+  margin-top: 10rem;
 }
 
-.mt-\[24rem\] {
-  margin-top: 24rem;
+.mt-\[14rem\] {
+  margin-top: 14rem;
 }
 
 .mt-\[20rem\] {
   margin-top: 20rem;
 }
 
-.mt-\[10rem\] {
-  margin-top: 10rem;
+.mt-\[18rem\] {
+  margin-top: 18rem;
+}
+
+.mt-\[19rem\] {
+  margin-top: 19rem;
 }
 
 .block {
@@ -724,6 +700,14 @@ video {
   height: 20rem;
 }
 
+.h-\[23\.5rem\] {
+  height: 23.5rem;
+}
+
+.h-\[100\%\] {
+  height: 100%;
+}
+
 .h-\[23rem\] {
   height: 23rem;
 }
@@ -752,16 +736,12 @@ video {
   height: 1.5rem;
 }
 
-.h-\[100\%\] {
-  height: 100%;
+.h-\[21rem\] {
+  height: 21rem;
 }
 
-.h-\[24rem\] {
-  height: 24rem;
-}
-
-.h-\[23\.5rem\] {
-  height: 23.5rem;
+.h-\[22rem\] {
+  height: 22rem;
 }
 
 .w-8 {
@@ -778,14 +758,6 @@ video {
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-\[12rem\] {
-  width: 12rem;
-}
-
-.w-\[50\%\] {
-  width: 50%;
 }
 
 .w-\[14rem\] {
@@ -816,6 +788,22 @@ video {
   grid-template-columns: 33% 67%;
 }
 
+.grid-cols-\[30\%_30\%_30\%\] {
+  grid-template-columns: 30% 30% 30%;
+}
+
+.grid-cols-\[32\%_32\%_32\%\] {
+  grid-template-columns: 32% 32% 32%;
+}
+
+.grid-cols-\[33\%_34\%_33\%\] {
+  grid-template-columns: 33% 34% 33%;
+}
+
+.grid-cols-\[34\%_34\%_32\%\] {
+  grid-template-columns: 34% 34% 32%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -834,6 +822,24 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1030,6 +1036,14 @@ video {
 
 .pr-36 {
   padding-right: 9rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .text-left {
@@ -1236,6 +1250,22 @@ body {
 .focus\:ring-blue-300:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(147 197 253 / var(--tw-ring-opacity));
+}
+
+.group:hover .group-hover\:opacity-40 {
+  opacity: 0.4;
+}
+
+.group\/edit:hover .group-hover\/edit\:opacity-40 {
+  opacity: 0.4;
+}
+
+.group\/edit:hover .hover\:group-hover\/edit\:opacity-40:hover {
+  opacity: 0.4;
+}
+
+.group:hover .hover\:group-hover\:opacity-40:hover {
+  opacity: 0.4;
 }
 
 @media (prefers-color-scheme: dark) {

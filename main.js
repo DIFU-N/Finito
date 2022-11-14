@@ -43,6 +43,7 @@ mobile.addEventListener("click", function (e) {
       </div>
     </div>
     `;
+    firstItems.removeAttribute('class');
     firstItems.innerHTML = `
     <div id="on-hover" class="bg-blue-600 border-solid h-[23rem] border-black absolute w-[100%]"> asssxa</div>
     <div class="border-solid h-[23rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[100%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
@@ -93,6 +94,28 @@ tablet.addEventListener("click", function (e) {
         A Computer Science Portal
       </div>
     `;
+    firstItems.removeAttribute('class');
+    firstItems.classList.add("w-[100%]", "h-[23.5rem]", "mt-[10rem]", "border-black", "grid", "grid-cols-[50%_50%]", "p-2", "pr-4", "gap-x-2", "gap-y-4");
+    firstItems.innerHTML = `
+    <div class="h-[100%] relative">
+        <div id="onHover" class="bg-blue-600 border-solid h-[22rem] border-black absolute w-[100%] "> asssxa</div>
+        <div class="border-solid h-[23rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[100%]  p-2" onmouseover="itemHover(onHover)" onmouseout="itemHoverOut(on-hover)">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative h-[100%]">
+        <div id="on-hover-2" class=" group bg-green-600 border-solid h-[22rem] border-black absolute w-[100%]"> asssxa</div>
+        <div class="border-solid h-[23rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[100%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-orange-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something for real</span>
+            <p class="italic text-sm text-white">amska mina</p>
+          </div>
+        </div>
+      </div>
+    `;
 });
 
 laptop.addEventListener("click", function (e) {
@@ -139,6 +162,37 @@ laptop.addEventListener("click", function (e) {
     A Computer Science Portal
   </div>
   `;
+  firstItems.removeAttribute('class');
+  firstItems.classList.add("w-[100%]", "h-[23.5rem]", "mt-[19rem]", "border-black", "grid", "grid-cols-[33%_34%_33%]", "p-2", "pr-8", "pl-2", "gap-x-2", "gap-y-4");
+  firstItems.innerHTML = `
+  <div class="h-[100%] relative">
+    <div id="onHover" class="bg-blue-600 border-solid h-[22rem] border-black absolute w-[100%] "> asssxa</div>
+    <div class="border-solid h-[23rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[100%]  p-2" onmouseover="itemHover(onHover)" onmouseout="itemHoverOut(on-hover)">
+      <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+        <span class="text-lg font-bold text-white">Wired Something</span>
+        <p class="italic text-sm text-white">amska</p>
+      </div>
+    </div>
+  </div>
+  <div class="relative h-[100%]">
+    <div id="on-hover-2" class=" group bg-green-600 border-solid h-[22rem] border-black absolute w-[100%]"> asssxa</div>
+    <div class="border-solid h-[23rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[100%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+      <div class="bg-orange-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+        <span class="text-lg font-bold text-white">Wired Something for real</span>
+        <p class="italic text-sm text-white">amska mina</p>
+      </div>
+    </div>
+  </div>
+  <div class="relative h-[100%]">
+    <div id="on-hover-2" class=" group bg-green-600 border-solid h-[22rem] border-black absolute w-[100%]"> asssxa</div>
+    <div class="border-solid h-[23rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[100%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+      <div class="bg-orange-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+        <span class="text-lg font-bold text-white">Wired Something for real</span>
+        <p class="italic text-sm text-white">amska mina</p>
+      </div>
+    </div>
+  </div>
+  `;
 });
 
 menu.addEventListener("click", function(e) {
@@ -158,11 +212,15 @@ const navLinks = document.querySelectorAll('nav li a').forEach(link => {
         link.classList.add("active");
     }
 });
+let logic = "loki";
+console.log(`"`+logic+`"`);
 
-function itemHover () {
-  document.querySelector("#on-hover").classList.add("opacity-40");
+function itemHover (logic) {
+  let bookie = '"#'+logic+`"`;
+  console.log(bookie);
+  // document.querySelector(`#`+logic).classList.add("opacity-40");
   // onHover.style.display = "block";
 }
 let itemHoverOut = () => {
-  document.querySelector("#on-hover").classList.remove("opacity-40");
+  document.querySelector(`"`+logic+`"`).classList.remove("opacity-40");
 }
