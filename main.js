@@ -6,7 +6,10 @@ let body = document.querySelector(".main-body"),
     menu = document.querySelector("#menu-btn"),
     navBar = document.querySelector("#nav-bar"),
     browseNow = document.querySelector("#browse-now"),
-    firstItems = document.querySelector("#first-items");
+    firstItems = document.querySelector("#first-items"),
+    secondItems = document.querySelector("#second-items"),
+    secndItmsHder1 = document.querySelector("#second-items-header-1"),
+    secndItmsHder2 = document.querySelector("#second-items-header-2");
 
 mobile.addEventListener("click", function (e) {
     e.preventDefault();
@@ -53,6 +56,131 @@ mobile.addEventListener("click", function (e) {
       </div>
     </div>
     `;    
+    secndItmsHder1.removeAttribute('class');
+    secndItmsHder2.removeAttribute('class');
+    secndItmsHder1.classList.add("text-xs", "px-2", "relative", "top-[22rem]");
+    secndItmsHder2.classList.add("text-3xl", "px-2", "bold", "underline", "relative", "top-[22rem]");
+    secondItems.removeAttribute('class');
+    secondItems.innerHTML = `
+    <div class="top-[22rem] relative">
+        <div id="on-hover" class="bg-orange-300 border-solid h-[21rem] border-black absolute w-[100%]"> asssxa</div>
+        <div class="border-solid h-[21rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[100%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+        <div class="w-[100%] grid place-items-center top-[22rem] relative">
+          <p class="text-sm">Accessories</p>
+          <p class="text-xl font-bold">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <br>
+      <div class="top-[45rem] relative">
+        <div id="on-hover" class="bg-lime-300 border-solid h-[21rem] border-black absolute w-[100%]"> asssxa</div>
+        <div class="border-solid h-[21rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[100%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+        <div class="w-[100%] grid place-items-center top-[22rem] relative">
+          <p class="text-sm">Accessories</p>
+          <p class="text-xl font-bold">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+        <br>
+      <div class="top-[67rem] relative">
+        <div id="on-hover" class="bg-purple-300 border-solid h-[21rem] border-black absolute w-[100%]"> asssxa</div>
+        <div class="border-solid h-[21rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[100%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+        <div class="w-[100%] grid place-items-center top-[22rem] relative">
+          <p class="text-sm">Accessories</p>
+          <p class="text-xl font-bold">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+        <br>
+      </div>
+      <div class="top-[89rem] relative">
+        <div id="on-hover" class="bg-red-200 border-solid h-[21rem] border-black absolute w-[100%]"> asssxa</div>
+        <div class="border-solid h-[21rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[100%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+        <div class="w-[100%] grid place-items-center top-[22rem] relative">
+          <p class="text-sm">Accessories</p>
+          <p class="text-xl font-bold">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <div class="top-[113rem] relative">
+        <div id="on-hover" class="bg-orange-300 border-solid h-[21rem] border-black absolute w-[100%]"> asssxa</div>
+        <div class="border-solid h-[21rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[100%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+        <div class="w-[100%] grid place-items-center top-[22rem] relative">
+          <p class="text-sm">Accessories</p>
+          <p class="text-xl font-bold">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <br>
+      <div class="top-[135rem] relative">
+        <div id="on-hover" class="bg-lime-300 border-solid h-[21rem] border-black absolute w-[100%]"> asssxa</div>
+        <div class="border-solid h-[21rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[100%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+        <div class="w-[100%] grid place-items-center top-[22rem] relative">
+          <p class="text-sm">Accessories</p>
+          <p class="text-xl font-bold">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+        <br>
+      <div class="top-[157rem] relative">
+        <div id="on-hover" class="bg-purple-300 border-solid h-[21rem] border-black absolute w-[100%]"> asssxa</div>
+        <div class="border-solid h-[21rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[100%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+        <div class="w-[100%] grid place-items-center top-[22rem] relative">
+          <p class="text-sm">Accessories</p>
+          <p class="text-xl font-bold">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+        <br>
+      </div>
+      <div class="top-[180rem] relative">
+        <div id="on-hover" class="bg-red-200 border-solid h-[21rem] border-black absolute w-[100%]"> asssxa</div>
+        <div class="border-solid h-[21rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[100%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+        <div class="w-[100%] grid place-items-center top-[22rem] relative">
+          <p class="text-sm">Accessories</p>
+          <p class="text-xl font-bold">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+    `;
 });
 
 tablet.addEventListener("click", function (e) {
@@ -113,6 +241,126 @@ tablet.addEventListener("click", function (e) {
             <span class="text-lg font-bold text-white">Wired Something for real</span>
             <p class="italic text-sm text-white">amska mina</p>
           </div>
+        </div>
+      </div>
+    `;
+    secndItmsHder1.removeAttribute('class');
+    secndItmsHder2.removeAttribute('class');
+    secndItmsHder1.classList.add("text-md", "px-2");
+    secndItmsHder2.classList.add("text-4xl", "px-2", "bold", "underline");
+    secondItems.removeAttribute('class');
+    secondItems.classList.add("w-[100%]", "h-[110rem]", "grid", "grid-cols-[50%_50%]", "p-2", "absolute", "pr-8", "gap-4");
+    secondItems.innerHTML = `
+    <div class="">
+        <div id="on-hover" class="bg-orange-300 border-solid rounded-md h-[21rem] border-black absolute w-[48%]"> asssxa</div>
+        <div class="border-solid h-[21rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[48%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+        <div class="w-[100%] grid place-items-center relative top-[22rem]">
+          <p class="text-sm">Accessories</p>
+          <p class="text-xl font-bold hover:text-blue-700">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <div class="">
+        <div id="on-hover" class="bg-lime-300 border-solid h-[21rem] rounded-md border-black absolute w-[48%]"> asssxa</div>
+        <div class="border-solid h-[21rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[48%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+        <div class="w-[100%] grid place-items-center relative top-[22rem]">
+          <p class="text-sm">Accessories</p>
+          <p class="text-xl font-bold hover:text-blue-700">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <div class="">
+        <div id="on-hover" class="bg-purple-300 border-solid h-[21rem] rounded-md border-black absolute w-[48%]"> asssxa</div>
+        <div class="border-solid h-[21rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[48%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+        <div class="w-[100%] grid place-items-center relative top-[22rem]">
+          <p class="text-sm">Accessories</p>
+          <p class="text-xl font-bold hover:text-blue-700">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <div class="">
+        <div id="on-hover" class="bg-red-200 border-solid h-[21rem] border-black rounded-md absolute w-[48%]"> asssxa</div>
+        <div class="border-solid h-[21rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[48%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+        <div class="w-[100%] grid place-items-center relative top-[22rem]">
+          <p class="text-sm">Accessories</p>
+          <p class="text-xl font-bold hover:text-blue-700">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <div class="">
+        <div id="on-hover" class="bg-orange-300 border-solid h-[21rem] rounded-md border-black absolute w-[48%]"> asssxa</div>
+        <div class="border-solid h-[21rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[48%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+        <div class="w-[100%] grid place-items-center relative top-[22rem]">
+          <p class="text-sm">Accessories</p>
+          <p class="text-xl font-bold hover:text-blue-700">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <div class="">
+        <div id="on-hover" class="bg-lime-300 border-solid h-[21rem] border-black rounded-md absolute w-[48%]"> asssxa</div>
+        <div class="border-solid h-[21rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[48%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+        <div class="w-[100%] grid place-items-center relative top-[22rem]">
+          <p class="text-sm">Accessories</p>
+          <p class="text-xl font-bold hover:text-blue-700">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <div class="">
+        <div id="on-hover" class="bg-purple-300 border-solid h-[21rem] border-black rounded-md absolute w-[48%]"> asssxa</div>
+        <div class="border-solid h-[21rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[48%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+        <div class="w-[100%] grid place-items-center relative top-[22rem]">
+          <p class="text-sm">Accessories</p>
+          <p class="text-xl font-bold hover:text-blue-700">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <div class="">
+        <div id="on-hover" class="bg-red-200 border-solid h-[21rem] border-black rounded-md absolute w-[48%]"> asssxa</div>
+        <div class="border-solid h-[21rem] border-2 pt-[14rem] opacity-0 hover:opacity-100 bg-transparent absolute w-[48%]" onmouseover="itemHover()" onmouseout="itemHoverOut()">
+          <div class="bg-green-600 p-6 w-[14rem] h-[6rem] border-solid z-50">
+            <span class="text-lg font-bold text-white">Wired Something</span>
+            <p class="italic text-sm text-white">amska</p>
+          </div>
+        </div>
+        <div class="w-[100%] grid place-items-center relative top-[22rem]">
+          <p class="text-sm">Accessories</p>
+          <p class="text-xl font-bold hover:text-blue-700">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
         </div>
       </div>
     `;
