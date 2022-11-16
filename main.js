@@ -9,7 +9,8 @@ let body = document.querySelector(".main-body"),
     firstItems = document.querySelector("#first-items"),
     secondItems = document.querySelector("#second-items"),
     secndItmsHder1 = document.querySelector("#second-items-header-1"),
-    secndItmsHder2 = document.querySelector("#second-items-header-2");
+    secndItmsHder2 = document.querySelector("#second-items-header-2"),
+    promoBar = document.querySelector("#promo");
 
 mobile.addEventListener("click", function (e) {
     e.preventDefault();
@@ -180,6 +181,14 @@ mobile.addEventListener("click", function (e) {
           <p class="text-gray-600">$150.00</p>
         </div>
       </div>
+    `;
+    promoBar.removeAttribute('class');
+    promoBar.classList.add("w-[95%]", "h-[22rem]", "m-3", "bg-blue-200", "p-16", "text-center", "relative", "top-[205rem]");
+    promoBar.innerHTML = `
+      <p class="text-3xl font-bold font-mono">Up to 50% off</p>
+      <p class="text-3xl font-bold font-mono mt-3 mb-2">Winter Sale</p>
+      <p class="text-gray-500">Him she'd let them sixth saw light</p>
+      <button class="border-2 border-blue-700 bg-blue-700 text-white font-bold hover:text-black mt-9 pr-6 pl-6 pt-3 pb-3 rounded-3xl hover:bg-blue-200">Shop Now</button>
     `;
 });
 
@@ -363,6 +372,14 @@ tablet.addEventListener("click", function (e) {
           <p class="text-gray-600">$150.00</p>
         </div>
       </div>
+    `;
+    promoBar.removeAttribute('class');
+    promoBar.classList.add("w-[95%]", "h-[28rem]", "m-5", "bg-blue-200", "p-20", "text-center", "relative", "top-[115rem]");
+    promoBar.innerHTML = `
+      <p class="text-5xl font-bold font-mono">Up to 50% off</p>
+      <p class="text-4xl font-bold font-mono mt-5 mb-3">Winter Sale</p>
+      <p class="text-gray-500">Him she'd let them sixth saw light</p>
+      <button class="border-2 border-blue-700 bg-blue-700 text-white font-bold hover:text-black mt-10 pr-12 pl-12 pt-3 pb-3 rounded-3xl hover:bg-blue-200">Shop Now</button>
     `;
 });
 
@@ -588,6 +605,14 @@ laptop.addEventListener("click", function (e) {
           <p class="text-gray-600">$150.00</p>
         </div>
       </div>
+  `;
+  promoBar.removeAttribute('class');
+  promoBar.classList.add("w-[100%]", "h-[28rem]", "m-5", "bg-blue-200", "pt-24", "pr-[43rem]", "text-center", "relative", "top-[90rem]");
+  promoBar.innerHTML = `
+    <p class="text-5xl font-bold font-mono">Up to 50% off</p>
+    <p class="text-4xl font-bold font-mono mt-5 mb-3">Winter Sale</p>
+    <p class="text-gray-500">Him she'd let them sixth saw light</p>
+    <button class="border-2 border-blue-700 bg-blue-700 text-white font-bold hover:text-black mt-14 pr-12 pl-12 pt-3 pb-3 rounded-3xl hover:bg-blue-200">Shop Now</button>
   `;
 });
 
