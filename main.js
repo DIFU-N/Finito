@@ -636,6 +636,32 @@ const navLinks = document.querySelectorAll('nav li a').forEach(link => {
 let logic = "loki";
 console.log(`"`+logic+`"`);
 
+const slidesContainer = document.querySelector("#slides-container");
+const slide = document.querySelector("#slide");
+const prevButton = document.querySelector("#slide-arrow-prev");
+const nextButton = document.querySelector("#slide-arrow-next");
+
+nextButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  
+  console.log(slidesContainer.scrollLeft);
+  console.log(slidesContainer.childElementCount * slideWidth);
+  if(slidesContainer.scrollLeft == ((slidesContainer.childElementCount - 1) * slideWidth)) {
+    slidesContainer.scrollLeft = 0;
+    return;
+  }
+  slidesContainer.scrollLeft += slideWidth;
+});
+
+prevButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  if(slidesContainer.scrollLeft == 0) {
+    slidesContainer.scrollLeft = ((slidesContainer.childElementCount - 1) * slideWidth);
+    return;
+  }
+  slidesContainer.scrollLeft -= slideWidth;
+}); 
+
 function itemHover (logic) {
   let bookie = '"#'+logic+`"`;
   console.log(bookie);
