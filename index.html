@@ -201,34 +201,54 @@
       <button class="border-2 border-blue-700 bg-blue-700 text-white font-bold hover:text-black mt-9 pr-6 pl-6 pt-3 pb-3 rounded-3xl hover:bg-blue-200">Shop Now</button>
     </div>
 
-<div id="slides-container" class="relative top-[205rem] w-[100%] border-solid border-2 border-black" data-carousel="static">
-  <!-- Carousel wrapper -->
-  <div class="relative h-[100%] overflow-hidden border-solid border-2 border-blue-700 rounded-lg">
-       <!-- Item 1 -->
-      <div class="hidden h-[70%] duration-700 ease-in-out border-solid border-2 border-blue-700" data-carousel-item="active">
-        <div class="grid relative w-[100%] place-items-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-          <p class="text-sm text-gray-400">Accessories</p>
-            <p class="text-xl font-bold hover:text-blue-700">Quartz Belt Watch</p>
-            <p class="text-gray-600">$150.00</p>
-        </div>
-      </div>
-      <!-- Item 2 -->
-      <div class="hidden h-[70%] duration-700 ease-in-out" data-carousel-item>
-          <div class="grid relative w-[100%] place-items-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    <div id="slides-container" class="relative h-[50rem] top-[205rem] w-[100%]" data-carousel="static">
+      <!-- Carousel wrapper -->
+      <div class="relative h-[100%] overflow-hidden m-3">
+        <!-- Item 1 -->
+        <div id="carousel-item" class="hidden h-[70%] duration-300 ease-in-out rounded-lg bg-yellow-100" data-carousel-item="active">
+          <div class="grid relative w-[100%] place-items-center top-[30rem] -translate-x-1/2 -translate-y-1/2 left-1/2">
             <p class="text-sm text-gray-400">Accessories</p>
               <p class="text-xl font-bold hover:text-blue-700">Quartz Belt Watch</p>
               <p class="text-gray-600">$150.00</p>
           </div>
-      </div>
-      <!-- Item 3 -->
-      <div class="hidden h-[70%] duration-700 ease-in-out" data-carousel-item>
-        <div class="grid relative w-[100%] place-items-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          <p class="text-sm text-gray-400">Accessories</p>
-            <p class="text-xl font-bold hover:text-blue-700">Quartz Belt Watch</p>
-            <p class="text-gray-600">$150.00</p>
+        </div>
+        <!-- Item 2 -->
+        <div id="carousel-item" class="hidden h-[70%] duration-300 bg-green-500 ease-in-out" data-carousel-item>
+            <div class="flex relative m-auto h-[10rem] w-[100%] border-2 border-black place-items-center">
+              <span>&#8750;</span>
+              <span>&#8751;</span>
+              <span>&#8752;</span>
+            </div>
+            <div class="grid relative w-[100%] place-items-center top-[30rem] -translate-x-1/2 -translate-y-1/2 left-1/2" alt="...">
+              <p class="text-sm text-gray-400">Accessories</p>
+                <p class="text-xl font-bold hover:text-blue-700">Qasmlak</p>
+                <p class="text-gray-600">$150.00</p>
+            </div>
+        </div>
+        <!-- Item 3 -->
+        <div id="carousel-item" class="hidden h-[70%] duration-300 bg-blue-200 ease-in-out" data-carousel-item>
+          <div class="grid relative w-[100%] place-items-center top-[30rem] -translate-x-1/2 -translate-y-1/2 left-1/2" alt="...">
+            <p class="text-sm text-gray-400">Accessories</p>
+              <p class="text-xl font-bold hover:text-blue-700">QMlkokajs</p>
+              <p class="text-gray-600">$150.00</p>
+          </div>
+        </div>
+        <div id="carousel-item" class="hidden h-[70%] duration-300 bg-red-300 ease-in-out" data-carousel-item>
+          <div class="grid relative w-[100%] place-items-center top-[30rem] -translate-x-1/2 -translate-y-1/2 left-1/2" alt="...">
+            <p class="text-sm text-gray-400">Accessories</p>
+              <p class="text-xl font-bold hover:text-blue-700">QMlkokajs</p>
+              <p class="text-gray-600">$150.00</p>
+          </div>
+        </div>
+        <div class="relative flex w-[100%] top-[90%] h-[3rem] pb-[3rem] place-items-center">
+          <button class="flex m-auto h-[3rem] hover:bg-gray-500 rounded-md bottom-[2rem] hover:text-white w-[2rem] text-4xl p-0 mr-[1rem] cursor-pointer opacity-[2rem] transition-opacity hover:opacity-[3rem] focus:opacity-[3rem] left-0 pl-[0.25rem]" data-carousel-prev>
+            &#8678; <!-- html arrow codes-->
+          </button>
+          <button class="flex m-auto h-[3rem] hover:bg-gray-500 rounded-md hover:text-white w-[2rem] text-4xl p-0 ml-[1rem] cursor-pointer opacity-[2rem] transition-opacity hover:opacity-[3rem] focus:opacity-[3rem] right-0 pl-[0.75rem]" data-carousel-next>
+            &#8680;
+          </button>
         </div>
       </div>
-  </div>
   <!-- Slider indicators -->
   <!-- <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
       <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
@@ -236,59 +256,8 @@
       <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
   </div> -->
   <!-- Slider controls -->
-  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-          <span class="sr-only">Previous</span>
-      </span>
-  </button>
-  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-          <span class="sr-only">Next</span>
-      </span>
-  </button>
-</div>
-    <!-- <section id="slider-wrapper" class="m-[1rem] relative top-[205rem] overflow-hidden" data-carousel="static">
-      <ul class="w-[100%] flex list-none m-0 p-0 overflow-y-scroll overflow-hidden scroll-smooth " id="slides-container">
-        <li id="slide" class="w-[100%] h-[75%] flex-[1_0_100%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-          <div class="h-[20%] top-[30rem] w-[100%] grid place-items-center relative">
-            <p class="text-sm text-gray-400">Accessories</p>
-            <p class="text-xl font-bold hover:text-blue-700">Quartz Belt Watch</p>
-            <p class="text-gray-600">$150.00</p>
-          </div>
-        </li> 
-        <li id="slide" class="w-[100%] h-[75%] flex-[1_0_100%] bg-gradient-to-r from-sky-500 via-green-500 to-indigo-500">
-          <div class="h-[20%] top-[30rem] w-[100%] grid place-items-center relative">
-            <p class="text-sm text-gray-400">Accessories</p>
-            <p class="text-xl font-bold hover:text-blue-700">Quartz Belt Watch</p>
-            <p class="text-gray-600">$150.00</p>
-          </div>
-        </li>
-        <li id="slide" class="w-[100%] h-[75%] flex-[1_0_100%] bg-gradient-to-r from-violet-500 via-red-500 to-fuchsia-500">
-          <div class="h-[20%] top-[30rem] w-[100%] grid place-items-center relative">
-            <p class="text-sm text-gray-400">Accessories</p>
-            <p class="text-xl font-bold hover:text-blue-700">Quartz Belt Watch</p>
-            <p class="text-gray-600">$150.00</p>
-          </div>
-        </li>
-        <li id="slide" class="w-[100%] h-[75%] flex-[1_0_100%] bg-gradient-to-r from-cyan-500 via-yellow-500 to-blue-500">
-          <div class="h-[20%] top-[30rem] w-[100%] grid place-items-center relative">
-            <p class="text-sm text-gray-400">Accessories</p>
-            <p class="text-xl font-bold hover:text-blue-700">Quartz Belt Watch</p>
-            <p class="text-gray-600">$150.00</p>
-          </div>
-        </li>
-      </ul>
-      <div class="flex w-[100%]">
-        <button class="flex m-auto h-[2rem] bg-white hover:bg-black-400 w-[2rem] text-sm p-0 mr-[1rem] cursor-pointer opacity-[2rem] transition-opacity hover:opacity-[3rem] focus:opacity-[3rem] left-0 pl-[0.25rem]" id="slide-arrow-prev">
-          &#8249;
-        </button>
-        <button class="flex m-auto h-[2rem] bg-white hover:bg-black-400 w-[2rem] text-sm p-0 ml-[1rem] cursor-pointer opacity-[2rem] transition-opacity hover:opacity-[3rem] focus:opacity-[3rem] right-0 pl-[0.75rem]" id="slide-arrow-next">
-          &#8250;
-        </button>
-      </div>
-    </section> -->
+    </div>
+
   </div>
   <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
   <script src="../path/to/flowbite/dist/flowbite.js"></script>
