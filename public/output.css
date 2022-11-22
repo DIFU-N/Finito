@@ -1144,8 +1144,8 @@ input:checked + .toggle-bg {
   top: 5rem;
 }
 
-.top-\[115rem\] {
-  top: 115rem;
+.top-\[110rem\] {
+  top: 110rem;
 }
 
 .left-32 {
@@ -1176,64 +1176,16 @@ input:checked + .toggle-bg {
   right: 0px;
 }
 
-.top-\[28rem\] {
-  top: 28rem;
+.top-\[140rem\] {
+  top: 140rem;
 }
 
-.top-\[29rem\] {
-  top: 29rem;
+.top-\[86rem\] {
+  top: 86rem;
 }
 
-.top-\[29\.5rem\] {
-  top: 29.5rem;
-}
-
-.top-\[100\%\] {
-  top: 100%;
-}
-
-.top-\[99\%\] {
-  top: 99%;
-}
-
-.top-\[95\%\] {
-  top: 95%;
-}
-
-.top-\[34rem\] {
-  top: 34rem;
-}
-
-.top-\[35rem\] {
-  top: 35rem;
-}
-
-.top-\[32rem\] {
-  top: 32rem;
-}
-
-.top-\[31rem\] {
-  top: 31rem;
-}
-
-.top-\[33rem\] {
-  top: 33rem;
-}
-
-.-bottom-5 {
-  bottom: -1.25rem;
-}
-
-.-bottom-12 {
-  bottom: -3rem;
-}
-
-.-bottom-28 {
-  bottom: -7rem;
-}
-
-.-bottom-24 {
-  bottom: -6rem;
+.top-\[105rem\] {
+  top: 105rem;
 }
 
 .z-50 {
@@ -1451,14 +1403,6 @@ input:checked + .toggle-bg {
 
 .h-4 {
   height: 1rem;
-}
-
-.h-\[35rem\] {
-  height: 35rem;
-}
-
-.h-\[15rem\] {
-  height: 15rem;
 }
 
 .w-8 {
@@ -1766,6 +1710,10 @@ input:checked + .toggle-bg {
 
 .border-r-2 {
   border-right-width: 2px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 
 .border-solid {
@@ -2167,6 +2115,10 @@ input:checked + .toggle-bg {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .italic {

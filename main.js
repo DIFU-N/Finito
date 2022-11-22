@@ -8,9 +8,12 @@ let body = document.querySelector(".main-body"),
     browseNow = document.querySelector("#browse-now"),
     firstItems = document.querySelector("#first-items"),
     secondItems = document.querySelector("#second-items"),
+    secndItmsHder = document.querySelector("#second-items-header"),
     secndItmsHder1 = document.querySelector("#second-items-header-1"),
     secndItmsHder2 = document.querySelector("#second-items-header-2"),
-    promoBar = document.querySelector("#promo");
+    promoBar = document.querySelector("#promo"),
+    sldesItmsHder = document.querySelector("#slide-items-header"),
+    slidesContainer = document.querySelector("#slides-container");
 
 mobile.addEventListener("click", function (e) {
     e.preventDefault();
@@ -57,10 +60,17 @@ mobile.addEventListener("click", function (e) {
       </div>
     </div>
     `;    
-    secndItmsHder1.removeAttribute('class');
-    secndItmsHder2.removeAttribute('class');
-    secndItmsHder1.classList.add("text-xs", "px-2", "relative", "top-[22rem]");
-    secndItmsHder2.classList.add("text-3xl", "px-2", "bold", "underline", "relative", "top-[22rem]");
+    secndItmsHder.innerHTML = `
+    <p id="second-items-header-1" class="text-xs px-2 relative top-[22rem]">Popular Item in the market</p>
+    <div class="flex relative top-[22rem]">
+      <p id="second-items-header-2" class="text-3xl p-2 font-extrabold relative">Trending</p>
+      <p id="second-items-header-2" class="text-3xl py-2 font-extrabold border-b-2 border-blue-700 relative">Product</p> 
+    </div>
+    `;
+    // secndItmsHder1.removeAttribute('class');
+    // secndItmsHder2.removeAttribute('class');
+    // secndItmsHder1.classList.add("text-xs", "px-2", "relative", "top-[22rem]");
+    // secndItmsHder2.classList.add("text-3xl", "px-2", "bold", "underline", "relative", "top-[22rem]");
     secondItems.removeAttribute('class');
     secondItems.innerHTML = `
     <div class="top-[22rem] relative">
@@ -190,6 +200,78 @@ mobile.addEventListener("click", function (e) {
       <p class="text-gray-500">Him she'd let them sixth saw light</p>
       <button class="border-2 border-blue-700 bg-blue-700 text-white font-bold hover:text-black mt-9 pr-6 pl-6 pt-3 pb-3 rounded-3xl hover:bg-blue-200">Shop Now</button>
     `;
+    sldesItmsHder.innerHTML = `
+    <p id="slide-items-header-1" class="text-xs px-2 relative top-[205rem]">Popular Item in the market</p>
+    <div class="flex relative top-[205rem]">
+      <p id="slide-items-header-2" class="text-3xl p-2 font-extrabold relative">Best</p>
+      <p id="slide-items-header-3" class="text-3xl py-2 font-extrabold border-solid border-b-2 border-blue-700 relative">Sellers</p>
+    </div>
+    `;
+    slidesContainer.removeAttribute('class');
+    slidesContainer.classList.add("relative", "h-[50rem]", "top-[205rem]", "w-[100%]");
+    slidesContainer.innerHTML = `
+    <div class="relative h-[100%] overflow-hidden m-3">
+      <!-- Item 1 -->
+      <div id="carousel-item" class="group hidden h-[70%] duration-300 ease-in-out rounded-lg bg-yellow-100" data-carousel-item="active">
+        <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
+          <span class="border-solid border-2 border-black p-2">&#8750;</span>
+          <span class="border-solid border-2 border-black p-2">&#8751;</span>
+          <span class="border-solid border-2 border-black p-2">&#8752;</span>
+        </div>
+        <div class="grid relative w-[100%] place-items-center top-[30rem] -translate-x-1/2 -translate-y-1/2 left-1/2">
+          <p class="text-sm text-gray-400">Accessories</p>
+          <p class="text-xl font-bold group-hover:text-blue-700">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div id="carousel-item" class="group hidden h-[70%] duration-300 bg-green-500 ease-in-out" data-carousel-item>
+        <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
+          <span class="border-solid border-2 border-black p-2">&#8750;</span>
+          <span class="border-solid border-2 border-black p-2">&#8751;</span>
+          <span class="border-solid border-2 border-black p-2">&#8752;</span>
+        </div>
+        <div class="grid relative w-[100%] place-items-center top-[30rem] -translate-x-1/2 -translate-y-1/2 left-1/2" alt="...">
+          <p class="text-sm text-gray-400">Accessories</p>
+          <p class="text-xl font-bold group-hover:text-blue-700">Qasmlak</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div id="carousel-item" class="group hidden h-[70%] duration-300 bg-blue-200 ease-in-out" data-carousel-item>
+        <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
+          <span class="border-solid border-2 border-black p-2">&#8750;</span>
+          <span class="border-solid border-2 border-black p-2">&#8751;</span>
+          <span class="border-solid border-2 border-black p-2">&#8752;</span>
+        </div>
+        <div class="grid relative w-[100%] place-items-center top-[30rem] -translate-x-1/2 -translate-y-1/2 left-1/2" alt="...">
+          <p class="text-sm text-gray-400">Accessories</p>
+          <p class="text-xl font-bold group-hover:text-blue-700">QMlkokajs</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <div id="carousel-item" class="group hidden h-[70%] duration-300 bg-red-300 ease-in-out" data-carousel-item>
+        <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
+          <span class="border-solid border-2 border-black p-2">&#8750;</span>
+          <span class="border-solid border-2 border-black p-2">&#8751;</span>
+          <span class="border-solid border-2 border-black p-2">&#8752;</span>
+        </div>
+        <div class="grid relative w-[100%] place-items-center top-[30rem] -translate-x-1/2 -translate-y-1/2 left-1/2" alt="...">
+          <p class="text-sm text-gray-400">Accessories</p>
+          <p class="text-xl font-bold group-hover:text-blue-700">QMlkokajs</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <div class="relative flex justify-center w-[100%] top-[90%] h-[3rem] pb-[3rem] place-items-center">
+        <button class="hover:bg-gray-500 rounded-md hover:text-white text-3xl p-0 cursor-pointer opacity-[2rem] transition-opacity hover:opacity-[3rem] focus:opacity-[3rem]" data-carousel-prev>
+          &#8678; <!-- html arrow codes-->
+        </button>
+        <button class="hover:bg-gray-500 rounded-md hover:text-white text-3xl p-0 cursor-pointer opacity-[2rem] transition-opacity hover:opacity-[3rem] focus:opacity-[3rem]" data-carousel-next>
+          &#8680;
+        </button>
+      </div>
+    </div>
+    `;
 });
 
 tablet.addEventListener("click", function (e) {
@@ -253,10 +335,17 @@ tablet.addEventListener("click", function (e) {
         </div>
       </div>
     `;
-    secndItmsHder1.removeAttribute('class');
-    secndItmsHder2.removeAttribute('class');
-    secndItmsHder1.classList.add("text-md", "px-2");
-    secndItmsHder2.classList.add("text-4xl", "px-2", "bold", "underline");
+    secndItmsHder.innerHTML = `
+    <p id="second-items-header-1" class="text-md px-2 relative">Popular Item in the market</p>
+    <div class="flex relative">
+      <p id="second-items-header-2" class="text-4xl p-2 font-extrabold relative">Trending</p>
+      <p id="second-items-header-2" class="text-4xl py-2 font-extrabold border-b-2 border-blue-700 relative">Product</p> 
+    </div>
+    `;
+    // secndItmsHder1.removeAttribute('class');
+    // secndItmsHder2.removeAttribute('class');
+    // secndItmsHder1.classList.add("text-md", "px-2");
+    // secndItmsHder2.classList.add("text-4xl", "px-2", "bold", "underline");
     secondItems.removeAttribute('class');
     secondItems.classList.add("w-[100%]", "h-[110rem]", "grid", "grid-cols-[50%_50%]", "p-2", "absolute", "pr-8", "gap-4");
     secondItems.innerHTML = `
@@ -374,12 +463,19 @@ tablet.addEventListener("click", function (e) {
       </div>
     `;
     promoBar.removeAttribute('class');
-    promoBar.classList.add("w-[95%]", "h-[28rem]", "m-5", "bg-blue-200", "p-20", "text-center", "relative", "top-[115rem]");
+    promoBar.classList.add("w-[95%]", "h-[28rem]", "m-5", "bg-blue-200", "p-20", "text-center", "relative", "top-[110rem]");
     promoBar.innerHTML = `
       <p class="text-5xl font-bold font-mono">Up to 50% off</p>
       <p class="text-4xl font-bold font-mono mt-5 mb-3">Winter Sale</p>
       <p class="text-gray-500">Him she'd let them sixth saw light</p>
       <button class="border-2 border-blue-700 bg-blue-700 text-white font-bold hover:text-black mt-10 pr-12 pl-12 pt-3 pb-3 rounded-3xl hover:bg-blue-200">Shop Now</button>
+    `;
+    sldesItmsHder.innerHTML = `
+    <p id="second-items-header-1" class="top-[110rem] text-md px-2 relative">Popular Item in the market</p>
+    <div class="flex relative top-[110rem]">
+      <p id="second-items-header-2" class="text-4xl p-2 font-extrabold relative">Best</p>
+      <p id="second-items-header-2" class="text-4xl py-2 font-extrabold border-b-2 border-blue-700 relative">Sellers</p> 
+    </div>
     `;
 });
 
@@ -458,10 +554,17 @@ laptop.addEventListener("click", function (e) {
     </div>
   </div>
   `;
-  secndItmsHder1.removeAttribute('class');
-  secndItmsHder2.removeAttribute('class');
-  secndItmsHder1.classList.add("ml-24", "text-md", "px-2");
-  secndItmsHder2.classList.add("ml-24", "text-4xl", "px-2", "bold", "underline");
+  secndItmsHder.innerHTML = `
+    <p id="second-items-header-1" class="ml-24 text-md px-2 relative">Popular Item in the market</p>
+    <div class="flex relative ml-24">
+      <p id="second-items-header-2" class="text-4xl p-2 font-extrabold relative">Trending</p>
+      <p id="second-items-header-2" class="text-4xl py-2 font-extrabold border-b-2 border-blue-700 relative">Product</p> 
+    </div>
+  `;
+  // secndItmsHder1.removeAttribute('class');
+  // secndItmsHder2.removeAttribute('class');
+  // secndItmsHder1.classList.add("ml-24", "text-md", "px-2");
+  // secndItmsHder2.classList.add("ml-24", "text-4xl", "px-2", "bold", "underline");
   secondItems.removeAttribute('class');
   secondItems.classList.add("w-[80%]", "ml-24", "h-[90rem]", "grid", "grid-cols-[25%_25%_25%_25%]", "absolute");
   secondItems.innerHTML = `
@@ -613,6 +716,13 @@ laptop.addEventListener("click", function (e) {
     <p class="text-4xl font-bold font-mono mt-5 mb-3">Winter Sale</p>
     <p class="text-gray-500">Him she'd let them sixth saw light</p>
     <button class="border-2 border-blue-700 bg-blue-700 text-white font-bold hover:text-black mt-14 pr-12 pl-12 pt-3 pb-3 rounded-3xl hover:bg-blue-200">Shop Now</button>
+  `;
+  sldesItmsHder.innerHTML = `
+    <p id="second-items-header-1" class="top-[90rem] ml-24 text-md px-2 relative">Popular Item in the market</p>
+    <div class="flex relative ml-24 top-[90rem]">
+      <p id="second-items-header-2" class="text-4xl p-2 font-extrabold relative">Best</p>
+      <p id="second-items-header-2" class="text-4xl py-2 font-extrabold border-b-2 border-blue-700 relative">Sellers</p> 
+    </div>
   `;
 });
 
