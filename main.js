@@ -13,7 +13,7 @@ let body = document.querySelector(".main-body"),
     secndItmsHder2 = document.querySelector("#second-items-header-2"),
     promoBar = document.querySelector("#promo"),
     sldesItmsHder = document.querySelector("#slide-items-header"),
-    slidesContainer = document.querySelector("#slides-container");
+    sldesContainer = document.querySelector("#slides-container");
 
 mobile.addEventListener("click", function (e) {
     e.preventDefault();
@@ -207,12 +207,13 @@ mobile.addEventListener("click", function (e) {
       <p id="slide-items-header-3" class="text-3xl py-2 font-extrabold border-solid border-b-2 border-blue-700 relative">Sellers</p>
     </div>
     `;
-    slidesContainer.removeAttribute('class');
-    slidesContainer.classList.add("relative", "h-[50rem]", "top-[205rem]", "w-[100%]");
-    slidesContainer.innerHTML = `
-    <div class="relative h-[100%] overflow-hidden m-3">
-      <!-- Item 1 -->
-      <div id="carousel-item" class="group hidden h-[70%] duration-300 ease-in-out rounded-lg bg-yellow-100" data-carousel-item="active">
+    sldesContainer.removeAttribute('class');
+    sldesContainer.classList.add("h-[50rem]", "top-[205rem]", "w-[100%]", "relative");
+    sldesContainer.setAttribute('data-carousel', "static");
+    // add the hidden attribute to the carousel-item classes
+    sldesContainer.innerHTML = `
+    <div class="h-[100%] m-3">
+      <div id="carousel-item" class="group h-[70%] duration-300 ease-in-out rounded-lg bg-yellow-100" data-carousel-item="active">
         <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
           <span class="border-solid border-2 border-black p-2">&#8750;</span>
           <span class="border-solid border-2 border-black p-2">&#8751;</span>
@@ -224,8 +225,7 @@ mobile.addEventListener("click", function (e) {
           <p class="text-gray-600">$150.00</p>
         </div>
       </div>
-      <!-- Item 2 -->
-      <div id="carousel-item" class="group hidden h-[70%] duration-300 bg-green-500 ease-in-out" data-carousel-item>
+      <div id="carousel-item" class="group h-[70%] duration-300 bg-green-500 ease-in-out" data-carousel-item>
         <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
           <span class="border-solid border-2 border-black p-2">&#8750;</span>
           <span class="border-solid border-2 border-black p-2">&#8751;</span>
@@ -237,8 +237,7 @@ mobile.addEventListener("click", function (e) {
           <p class="text-gray-600">$150.00</p>
         </div>
       </div>
-      <!-- Item 3 -->
-      <div id="carousel-item" class="group hidden h-[70%] duration-300 bg-blue-200 ease-in-out" data-carousel-item>
+      <div id="carousel-item" class="group h-[70%] duration-300 bg-blue-200 ease-in-out" data-carousel-item>
         <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
           <span class="border-solid border-2 border-black p-2">&#8750;</span>
           <span class="border-solid border-2 border-black p-2">&#8751;</span>
@@ -250,7 +249,7 @@ mobile.addEventListener("click", function (e) {
           <p class="text-gray-600">$150.00</p>
         </div>
       </div>
-      <div id="carousel-item" class="group hidden h-[70%] duration-300 bg-red-300 ease-in-out" data-carousel-item>
+      <div id="carousel-item" class="group h-[70%] duration-300 bg-red-300 ease-in-out" data-carousel-item>
         <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
           <span class="border-solid border-2 border-black p-2">&#8750;</span>
           <span class="border-solid border-2 border-black p-2">&#8751;</span>
@@ -477,70 +476,73 @@ tablet.addEventListener("click", function (e) {
       <p id="second-items-header-2" class="text-4xl py-2 font-extrabold border-b-2 border-blue-700 relative">Sellers</p> 
     </div>
     `;
-    slidesContainer.removeAttribute('class');
-    slidesContainer.classList.add("relative", "h-[50rem]", "top-[110rem]", "w-[100%]");
-    slidesContainer.innerHTML = `
-      <!-- Carousel wrapper -->
-      <div class="grid grid-cols-2 h-[100%] overflow-hidden relative gap-x-4 m-4">
-        <!-- Item 1 -->
-        <div id="carousel-item" class="group hidden w-[50%] h-[70%] place-content-around duration-500 ease-in-out rounded-lg bg-yellow-100" data-carousel-item="active">
-          <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
-            <span class="border-solid border-2 border-black p-2">&#8750;</span>
-            <span class="border-solid border-2 border-black p-2">&#8751;</span>
-            <span class="border-solid border-2 border-black p-2">&#8752;</span>
+    sldesContainer.removeAttribute('class');
+    sldesContainer.classList.add("h-[50rem]", "w-[100%]", "relative");
+    // add the hidden attribute to the carousel-item classes
+    sldesContainer.innerHTML = `
+    <div class="relative h-[50rem] top-[110rem] w-[100%]" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="grid grid-cols-2 h-[100%] overflow-hidden relative gap-x-4 m-4">
+          <!-- Item 1 -->
+          <div id="carousel-item" class="group w-[50%] h-[70%] place-content-around duration-500 ease-in-out rounded-lg bg-yellow-100" data-carousel-item="active">
+            <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
+              <span class="border-solid border-2 border-black p-2">&#8750;</span>
+              <span class="border-solid border-2 border-black p-2">&#8751;</span>
+              <span class="border-solid border-2 border-black p-2">&#8752;</span>
+            </div>
+            <div class="grid relative w-[100%] place-items-center top-[30rem] -translate-x-1/2 -translate-y-1/2 left-1/2">
+              <p class="text-sm text-gray-400">Accessories</p>
+              <p class="text-xl font-bold group-hover:text-blue-700">Quartz Belt Watch</p>
+              <p class="text-gray-600">$150.00</p>
+            </div>
           </div>
-          <div class="grid relative w-[100%] place-items-center top-[30rem] -translate-x-1/2 -translate-y-1/2 left-1/2">
-            <p class="text-sm text-gray-400">Accessories</p>
-            <p class="text-xl font-bold group-hover:text-blue-700">Quartz Belt Watch</p>
-            <p class="text-gray-600">$150.00</p>
+          <!-- Item 2 -->
+          <div id="carousel-item" class="group w-[50%] h-[70%] place-content-around rounded-lg duration-500 bg-green-500 ease-in-out" data-carousel-item>
+            <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
+              <span class="border-solid border-2 border-black p-2">&#8750;</span>
+              <span class="border-solid border-2 border-black p-2">&#8751;</span>
+              <span class="border-solid border-2 border-black p-2">&#8752;</span>
+            </div>
+            <div class="grid relative w-[100%] place-items-center top-[30rem] -translate-x-1/2 -translate-y-1/2 left-1/2" alt="...">
+              <p class="text-sm text-gray-400">Accessories</p>
+              <p class="text-xl font-bold group-hover:text-blue-700">Qasmlak</p>
+              <p class="text-gray-600">$150.00</p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div id="carousel-item" class="group w-[50%] h-[70%] place-content-around rounded-lg duration-500 bg-blue-200 ease-in-out" data-carousel-item>
+            <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
+              <span class="border-solid border-2 border-black p-2">&#8750;</span>
+              <span class="border-solid border-2 border-black p-2">&#8751;</span>
+              <span class="border-solid border-2 border-black p-2">&#8752;</span>
+            </div>
+            <div class="grid relative w-[100%] place-items-center top-[30rem] -translate-x-1/2 -translate-y-1/2 left-1/2" alt="...">
+              <p class="text-sm text-gray-400">Accessories</p>
+              <p class="text-xl font-bold group-hover:text-blue-700">QMlkokajs</p>
+              <p class="text-gray-600">$150.00</p>
+            </div>
+          </div>
+          <div id="carousel-item" class="group w-[50%] h-[70%] place-content-around rounded-lg duration-500 bg-red-300 ease-in-out" data-carousel-item>
+            <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
+              <span class="border-solid border-2 border-black p-2">&#8750;</span>
+              <span class="border-solid border-2 border-black p-2">&#8751;</span>
+              <span class="border-solid border-2 border-black p-2">&#8752;</span>
+            </div>
+            <div class="grid relative w-[100%] place-items-center top-[30rem] -translate-x-1/2 -translate-y-1/2 left-1/2" alt="...">
+              <p class="text-sm text-gray-400">Accessories</p>
+              <p class="text-xl font-bold group-hover:text-blue-700">QMlkokajs</p>
+              <p class="text-gray-600">$150.00</p>
+            </div>
           </div>
         </div>
-        <!-- Item 2 -->
-        <div id="carousel-item" class="group hidden w-[50%] h-[70%] place-content-around rounded-lg duration-500 bg-green-500 ease-in-out" data-carousel-item>
-          <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
-            <span class="border-solid border-2 border-black p-2">&#8750;</span>
-            <span class="border-solid border-2 border-black p-2">&#8751;</span>
-            <span class="border-solid border-2 border-black p-2">&#8752;</span>
-          </div>
-          <div class="grid relative w-[100%] place-items-center top-[30rem] -translate-x-1/2 -translate-y-1/2 left-1/2" alt="...">
-            <p class="text-sm text-gray-400">Accessories</p>
-            <p class="text-xl font-bold group-hover:text-blue-700">Qasmlak</p>
-            <p class="text-gray-600">$150.00</p>
-          </div>
+        <div class="relative flex justify-center w-[100%] h-[3rem] pb-[3rem] place-items-center">
+          <button class="hover:bg-gray-500 rounded-md hover:text-white text-3xl p-0 cursor-pointer opacity-[2rem] transition-opacity hover:opacity-[3rem] focus:opacity-[3rem]" data-carousel-prev>
+            &#8678; <!-- html arrow codes-->
+          </button>
+          <button class="hover:bg-gray-500 rounded-md hover:text-white text-3xl p-0 cursor-pointer opacity-[2rem] transition-opacity hover:opacity-[3rem] focus:opacity-[3rem]" data-carousel-next>
+            &#8680;
+          </button>
         </div>
-        <!-- Item 3 -->
-        <div id="carousel-item" class="group hidden w-[50%] h-[70%] place-content-around rounded-lg duration-500 bg-blue-200 ease-in-out" data-carousel-item>
-          <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
-            <span class="border-solid border-2 border-black p-2">&#8750;</span>
-            <span class="border-solid border-2 border-black p-2">&#8751;</span>
-            <span class="border-solid border-2 border-black p-2">&#8752;</span>
-          </div>
-          <div class="grid relative w-[100%] place-items-center top-[30rem] -translate-x-1/2 -translate-y-1/2 left-1/2" alt="...">
-            <p class="text-sm text-gray-400">Accessories</p>
-            <p class="text-xl font-bold group-hover:text-blue-700">QMlkokajs</p>
-            <p class="text-gray-600">$150.00</p>
-          </div>
-        </div>
-        <div id="carousel-item" class="group hidden w-[50%] h-[70%] place-content-around rounded-lg duration-500 bg-red-300 ease-in-out" data-carousel-item>
-          <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
-            <span class="border-solid border-2 border-black p-2">&#8750;</span>
-            <span class="border-solid border-2 border-black p-2">&#8751;</span>
-            <span class="border-solid border-2 border-black p-2">&#8752;</span>
-          </div>
-          <div class="grid relative w-[100%] place-items-center top-[30rem] -translate-x-1/2 -translate-y-1/2 left-1/2" alt="...">
-            <p class="text-sm text-gray-400">Accessories</p>
-            <p class="text-xl font-bold group-hover:text-blue-700">QMlkokajs</p>
-            <p class="text-gray-600">$150.00</p>
-          </div>
-        </div>
-      </div>
-      <div class="relative flex justify-center w-[100%] h-[3rem] pb-[3rem] place-items-center">
-        <button class="hover:bg-gray-500 rounded-md hover:text-white text-3xl p-0 cursor-pointer opacity-[2rem] transition-opacity hover:opacity-[3rem] focus:opacity-[3rem]" data-carousel-prev>
-          &#8678; <!-- html arrow codes-->
-        </button>
-        <button class="hover:bg-gray-500 rounded-md hover:text-white text-3xl p-0 cursor-pointer opacity-[2rem] transition-opacity hover:opacity-[3rem] focus:opacity-[3rem]" data-carousel-next>
-          &#8680;
-        </button>
       </div>
     `;
 });
@@ -569,7 +571,7 @@ laptop.addEventListener("click", function (e) {
     </ul>
   `;
   browseNow.innerHTML = `
-  <div class="grid grid-cols-[33%_67%] h-[40rem] w-full">
+  <div class="grid grid-cols-[33%_67%] h-[40rem] w-[97%]">
     <div class="w-100% bg-blue-600 border-solid border-r-2 border-black"></div>
     <div class="space-y-2 text-left bg-blue-100 pl-56 pt-52 pr-36">
       <span class="text-3xl text-gray-600">Shop is fun</span>
@@ -590,7 +592,7 @@ laptop.addEventListener("click", function (e) {
   </div>
   `;
   firstItems.removeAttribute('class');
-  firstItems.classList.add("w-[100%]", "h-[23.5rem]", "mt-[19rem]", "border-black", "grid", "grid-cols-[33%_34%_33%]", "p-2", "pr-8", "pl-2", "gap-x-2", "gap-y-4");
+  firstItems.classList.add("w-[97%]", "h-[23.5rem]", "mt-[19rem]", "border-black", "grid", "grid-cols-[33%_34%_33%]", "p-2", "pr-8", "pl-2", "gap-x-2", "gap-y-4");
   firstItems.innerHTML = `
   <div class="h-[100%] relative">
     <div id="onHover" class="bg-blue-600 border-solid h-[22rem] border-black absolute w-[100%] "> asssxa</div>
@@ -776,7 +778,7 @@ laptop.addEventListener("click", function (e) {
       </div>
   `;
   promoBar.removeAttribute('class');
-  promoBar.classList.add("w-[100%]", "h-[28rem]", "m-5", "bg-blue-200", "pt-24", "pr-[43rem]", "text-center", "relative", "top-[90rem]");
+  promoBar.classList.add("w-[97%]", "h-[28rem]", "m-5", "bg-blue-200", "pt-24", "pr-[43rem]", "text-center", "relative", "top-[90rem]");
   promoBar.innerHTML = `
     <p class="text-5xl font-bold font-mono">Up to 50% off</p>
     <p class="text-4xl font-bold font-mono mt-5 mb-3">Winter Sale</p>
