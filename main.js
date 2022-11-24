@@ -13,7 +13,8 @@ let body = document.querySelector(".main-body"),
     secndItmsHder2 = document.querySelector("#second-items-header-2"),
     promoBar = document.querySelector("#promo"),
     sldesItmsHder = document.querySelector("#slide-items-header"),
-    sldesContainer = document.querySelector("#slides-container");
+    sldesContainer = document.querySelector("#slides-container"),
+    latestHder = document.querySelector("#latest-header");
 
 mobile.addEventListener("click", function (e) {
     e.preventDefault();
@@ -270,6 +271,13 @@ mobile.addEventListener("click", function (e) {
         </button>
       </div>
     </div>
+    `;
+    latestHder.innerHTML = `
+      <p id="latest-header-1" class="text-xs px-2 relative top-[205rem]">Popular Item in the market</p>
+      <div class="flex relative top-[205rem]">
+        <p id="latest-header-2" class="text-3xl p-2 font-extrabold relative">Latest</p>
+        <p id="latest-header-3" class="text-3xl py-2 font-extrabold border-solid border-b-2 border-blue-700 relative">News</p>
+      </div>
     `;
 });
 
@@ -545,6 +553,13 @@ tablet.addEventListener("click", function (e) {
         </div>
       </div>
     `;
+    latestHder.innerHTML = `
+      <p id="latest-header-1" class="text-md px-2 relative top-[110rem]">Popular Item in the market</p>
+      <div class="flex relative top-[110rem]">
+        <p id="latest-header-2" class="text-4xl p-2 font-extrabold relative">Latest</p>
+        <p id="latest-header-3" class="text-4xl py-2 font-extrabold border-solid border-b-2 border-blue-700 relative">News</p>
+      </div>
+    `;
 });
 
 laptop.addEventListener("click", function (e) {
@@ -790,6 +805,95 @@ laptop.addEventListener("click", function (e) {
     <div class="flex relative ml-24 top-[90rem]">
       <p id="second-items-header-2" class="text-4xl p-2 font-extrabold relative">Best</p>
       <p id="second-items-header-2" class="text-4xl py-2 font-extrabold border-b-2 border-blue-700 relative">Sellers</p> 
+    </div>
+  `;
+  sldesContainer.removeAttribute('class');
+  sldesContainer.classList.add("relative", "top-[90rem]", "w-[97%]", "h-[35rem]");
+  sldesContainer.innerHTML = `
+    <div class="relative w-[100%] ml-4 p-2 gap-2 h-[100%] grid grid-cols-4 overflow-hidden border-2 border-black ">
+      <!-- Item 1 -->
+      <div id="carousel-item" class="group relative w-[90%] h-[50%] duration-500 ease-in-out rounded-lg bg-yellow-100" data-carousel-item>
+        <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
+          <span class="border-solid border-2 border-black p-2">&#8750;</span>
+          <span class="border-solid border-2 border-black p-2">&#8751;</span>
+          <span class="border-solid border-2 border-black p-2">&#8752;</span>
+        </div>
+        <b>1</b>
+        <div class="grid absolute w-[100%] place-items-center top-[26rem] -translate-x-1/2 -translate-y-1/2 left-1/2">
+          <p class="text-sm text-gray-400">Accessories</p>
+          <p class="text-xl font-bold group-hover:text-blue-700">Quartz Belt Watch</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div id="carousel-item" class="group relative w-[90%] h-[50%] rounded-lg duration-500 bg-green-500 ease-in-out" data-carousel-item>
+        <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
+          <span class="border-solid border-2 border-black p-2">&#8750;</span>
+          <span class="border-solid border-2 border-black p-2">&#8751;</span>
+          <span class="border-solid border-2 border-black p-2">&#8752;</span>
+        </div>
+        <b>2</b>
+        <div class="grid absolute w-[100%] place-items-center top-[26rem] -translate-x-1/2 -translate-y-1/2 left-1/2" alt="...">
+          <p class="text-sm text-gray-400">Accessories</p>
+          <p class="text-xl font-bold group-hover:text-blue-700">Qasmlak</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div id="carousel-item" class="group relative h-[50%] w-[90%] rounded-lg place-content-around duration-500 bg-blue-200 ease-in-out" data-carousel-item>
+        <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
+          <span class="border-solid border-2 border-black p-2">&#8750;</span>
+          <span class="border-solid border-2 border-black p-2">&#8751;</span>
+          <span class="border-solid border-2 border-black p-2">&#8752;</span>
+        </div>
+        <b>3</b>
+        <div class="grid absolute w-[100%] place-items-center top-[26rem] -translate-x-1/2 -translate-y-1/2 left-1/2" alt="...">
+          <p class="text-sm text-gray-400">Accessories</p>
+          <p class="text-xl font-bold group-hover:text-blue-700">QMlkokajs</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <div id="carousel-item" class="group relative h-[50%] w-[90%] place-content-around rounded-lg duration-500 bg-red-300 ease-in-out" data-carousel-item>
+        <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
+          <span class="border-solid border-2 border-black p-2">&#8750;</span>
+          <span class="border-solid border-2 border-black p-2">&#8751;</span>
+          <span class="border-solid border-2 border-black p-2">&#8752;</span>
+        </div>
+        <b>4</b>
+        <div class="grid absolute w-[100%] place-items-center top-[26rem] -translate-x-1/2 -translate-y-1/2 left-1/2" alt="...">
+          <p class="text-sm text-gray-400">Accessories</p>
+          <p class="text-xl font-bold group-hover:text-blue-700">QMlkokajs</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+      <div id="carousel-item" class="group relative place-content-around w-[90%] h-[50%] rounded-lg duration-500 bg-orange-300 ease-in-out" data-carousel-item>
+        <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
+          <span class="border-solid border-2 border-black p-2">&#8750;</span>
+          <span class="border-solid border-2 border-black p-2">&#8751;</span>
+          <span class="border-solid border-2 border-black p-2">&#8752;</span>
+        </div>
+        <b>5  </b>
+        <div class="grid absolute w-[100%] place-items-center top-[26rem] -translate-x-1/2 -translate-y-1/2 left-1/2" alt="...">
+          <p class="text-sm text-gray-400">Accessories</p>
+          <p class="text-xl font-bold group-hover:text-blue-700">QMlkokajs</p>
+          <p class="text-gray-600">$150.00</p>
+        </div>
+      </div>
+    </div>
+    <div class="absolute flex justify-center w-[100%] h-[3rem] pb-[3rem] place-items-center">
+      <button class="hover:bg-gray-500 rounded-md hover:text-white text-3xl p-0 cursor-pointer opacity-[2rem] transition-opacity hover:opacity-[3rem] focus:opacity-[3rem]" data-carousel-prev>
+        &#8678; <!-- html arrow codes-->
+      </button>
+      <button class="hover:bg-gray-500 rounded-md hover:text-white text-3xl p-0 cursor-pointer opacity-[2rem] transition-opacity hover:opacity-[3rem] focus:opacity-[3rem]" data-carousel-next>
+        &#8680;
+      </button>
+    </div>
+  `;
+  latestHder.innerHTML = `
+    <p id="latest-header-1" class="text-md px-2 relative ml-24 top-[90rem]">Popular Item in the market</p>
+    <div class="flex relative ml-24 top-[90rem]">
+      <p id="latest-header-2" class="text-4xl p-2 font-extrabold relative">Latest</p>
+      <p id="latest-header-3" class="text-4xl py-2 font-extrabold border-solid border-b-2 border-blue-700 relative">News</p>
     </div>
   `;
 });
