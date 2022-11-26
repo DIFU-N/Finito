@@ -14,7 +14,8 @@ let body = document.querySelector(".main-body"),
     promoBar = document.querySelector("#promo"),
     sldesItmsHder = document.querySelector("#slide-items-header"),
     sldesContainer = document.querySelector("#slides-container"),
-    latestHder = document.querySelector("#latest-header");
+    latestHder = document.querySelector("#latest-header"),
+    latestNews = document.querySelector("#latest-news");
 
 mobile.addEventListener("click", function (e) {
     e.preventDefault();
@@ -279,6 +280,49 @@ mobile.addEventListener("click", function (e) {
         <p id="latest-header-3" class="text-3xl py-2 font-extrabold border-solid border-b-2 border-blue-700 relative">News</p>
       </div>
     `;
+    latestNews.innerHTML = `
+      <div class="grid relative top-[205rem] mt-5 p-2 gap-12">
+        <div>
+          <div class="border-solid border-2 border-black h-[20rem] w-[25rem]">picture</div>
+          <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
+            <span>By Admin</span>
+            <span>&#9787 2 Comments</span>
+          </div>
+          <span class="font-bold hover:text-blue-600 flex mt-5">No Such Thing As A Life That's Better Than Yours</span>
+          <span class="text-gray-600 flex mt-5">When I met her she was out for love, I bought her leather and some diamond studs..</span>
+          <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+            <span>Read More</span>
+            <span>&#8594;</span>
+          </div>
+        </div>
+        <div>
+          <div class="border-solid border-2 border-black h-[20rem] w-[25rem]">picture</div>
+          <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
+            <span>By Admin</span>
+            <span>&#9787 2 Comments</span>
+          </div>
+          <span class="font-bold hover:text-blue-600 flex mt-5">No Church In The Wild</span>
+          <span class="text-gray-600 flex mt-5">You can't stop it, music still playing in the background...</span>
+          <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+            <span>Read More</span>
+            <span>&#8594;</span>
+          </div>
+        </div>
+        <div>
+          <div class="border-solid border-2 border-black h-[20rem] w-[25rem]">picture</div>
+          <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
+            <span>By Admin</span>
+            <span>&#9787 2 Comments</span>
+          </div>
+          <span class="font-bold hover:text-blue-600 flex mt-5">It Won't Stop</span>
+          <span class="text-gray-600 flex mt-5">All I want is you, So what you trying to do...</span>
+          <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+            <span>Read More</span>
+            <span>&#8594;</span>
+          </div>
+        </div>
+      </div>
+    `;
 });
 
 tablet.addEventListener("click", function (e) {
@@ -478,8 +522,8 @@ tablet.addEventListener("click", function (e) {
       <button class="border-2 border-blue-700 bg-blue-700 text-white font-bold hover:text-black mt-10 pr-12 pl-12 pt-3 pb-3 rounded-3xl hover:bg-blue-200">Shop Now</button>
     `;
     sldesItmsHder.innerHTML = `
-    <p id="second-items-header-1" class="top-[110rem] text-md px-2 relative">Popular Item in the market</p>
-    <div class="flex relative top-[110rem]">
+    <p id="second-items-header-1" class="top-[110rem] ml-5 text-md px-2 relative">Popular Item in the market</p>
+    <div class="flex relative top-[110rem] ml-5">
       <p id="second-items-header-2" class="text-4xl p-2 font-extrabold relative">Best</p>
       <p id="second-items-header-2" class="text-4xl py-2 font-extrabold border-b-2 border-blue-700 relative">Sellers</p> 
     </div>
@@ -554,10 +598,53 @@ tablet.addEventListener("click", function (e) {
       </div>
     `;
     latestHder.innerHTML = `
-      <p id="latest-header-1" class="text-md px-2 relative top-[110rem]">Popular Item in the market</p>
-      <div class="flex relative top-[110rem]">
+      <p id="latest-header-1" class="text-md ml-5 px-2 relative top-[125rem]">Popular Item in the market</p>
+      <div class="flex relative top-[125rem] ml-5">
         <p id="latest-header-2" class="text-4xl p-2 font-extrabold relative">Latest</p>
         <p id="latest-header-3" class="text-4xl py-2 font-extrabold border-solid border-b-2 border-blue-700 relative">News</p>
+      </div>
+    `;
+    latestNews = `
+      <div class="grid relative grid-cols-2 top-[125rem] m-5 p-2 gap-12">
+        <div>
+          <div class="border-solid border-2 border-black h-[20rem] w-[100%]">picture</div>
+          <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
+            <span>By Admin</span>
+            <span>&#9787 2 Comments</span>
+          </div>
+          <span class="font-bold hover:text-blue-600 flex mt-5">No Such Thing As A Life That's Better Than Yours</span>
+          <span class="text-gray-600 flex mt-5">When I met her she was out for love, I bought her leather and some diamond studs..</span>
+          <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+            <span>Read More</span>
+            <span>&#8594;</span>
+          </div>
+        </div>
+        <div>
+          <div class="border-solid border-2 border-black h-[20rem] w-[100%]">picture</div>
+          <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
+            <span>By Admin</span>
+            <span>&#9787 2 Comments</span>
+          </div>
+          <span class="font-bold hover:text-blue-600 flex mt-5">No Church In The Wild</span>
+          <span class="text-gray-600 flex mt-5">You can't stop it, music still playing in the background...</span>
+          <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+            <span>Read More</span>
+            <span>&#8594;</span>
+          </div>
+        </div>
+        <div>
+          <div class="border-solid border-2 border-black h-[20rem] w-[100%]">picture</div>
+          <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
+            <span>By Admin</span>
+            <span>&#9787 2 Comments</span>
+          </div>
+          <span class="font-bold hover:text-blue-600 flex mt-5">It Won't Stop</span>
+          <span class="text-gray-600 flex mt-5">All I want is you, So what you trying to do...</span>
+          <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+            <span>Read More</span>
+            <span>&#8594;</span>
+          </div>
+        </div>
       </div>
     `;
 });
@@ -810,7 +897,7 @@ laptop.addEventListener("click", function (e) {
   sldesContainer.removeAttribute('class');
   sldesContainer.classList.add("relative", "top-[90rem]", "w-[97%]", "h-[35rem]");
   sldesContainer.innerHTML = `
-    <div class="relative w-[100%] ml-4 p-2 gap-2 h-[100%] grid grid-cols-4 overflow-hidden border-2 border-black ">
+    <div class="relative w-[100%] p-2 gap-2 h-[100%] grid grid-cols-4 overflow-hidden border-2 border-black ">
       <!-- Item 1 -->
       <div id="carousel-item" class="group relative w-[90%] h-[50%] duration-500 ease-in-out rounded-lg bg-yellow-100" data-carousel-item>
         <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
@@ -894,6 +981,49 @@ laptop.addEventListener("click", function (e) {
     <div class="flex relative ml-24 top-[90rem]">
       <p id="latest-header-2" class="text-4xl p-2 font-extrabold relative">Latest</p>
       <p id="latest-header-3" class="text-4xl py-2 font-extrabold border-solid border-b-2 border-blue-700 relative">News</p>
+    </div>
+  `;
+  latestNews.innerHTML = `
+    <div class="grid relative grid-cols-3 top-[90rem] mx-24 mt-5 p-2 gap-12">
+      <div>
+        <div class="border-solid border-2 border-black h-[20rem] w-[100%]">picture</div>
+        <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
+          <span>By Admin</span>
+          <span>&#9787 2 Comments</span>
+        </div>
+        <span class="font-bold hover:text-blue-600 flex mt-5">No Such Thing As A Life That's Better Than Yours</span>
+        <span class="text-gray-600 flex mt-5">When I met her she was out for love, I bought her leather and some diamond studs..</span>
+        <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+          <span>Read More</span>
+          <span>&#8594;</span>
+        </div>
+      </div>
+      <div>
+        <div class="border-solid border-2 border-black h-[20rem] w-[100%]">picture</div>
+        <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
+          <span>By Admin</span>
+          <span>&#9787 2 Comments</span>
+        </div>
+        <span class="font-bold hover:text-blue-600 flex mt-5">No Church In The Wild</span>
+        <span class="text-gray-600 flex mt-5">You can't stop it, music still playing in the background...</span>
+        <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+          <span>Read More</span>
+          <span>&#8594;</span>
+        </div>
+      </div>
+      <div>
+        <div class="border-solid border-2 border-black h-[20rem] w-[100%]">picture</div>
+        <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
+          <span>By Admin</span>
+          <span>&#9787 2 Comments</span>
+        </div>
+        <span class="font-bold hover:text-blue-600 flex mt-5">It Won't Stop</span>
+        <span class="text-gray-600 flex mt-5">All I want is you, So what you trying to do...</span>
+        <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+          <span>Read More</span>
+          <span>&#8594;</span>
+        </div>
+      </div>
     </div>
   `;
 });
