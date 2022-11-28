@@ -330,7 +330,7 @@ mobile.addEventListener("click", function (e) {
       <span class="font-extrabold text-2xl relative">GET UPDATE ANYWHERE</span>
       <span>Wake up today, anything, anything could happen.</span>
       <div class="flex gap-x-2">
-        <input type="email" placeholder="Enter your email" class="rounded-full" size="15">
+        <input type="email" placeholder="Enter your email" class="rounded-full border-1 border-gray-200" size="15">
         <button class="text-white p-2 rounded-full border-2 border-blue-700 bg-blue-700 font-bold border-solid w-[10rem] hover:bg-white hover:text-black">Subscribe Now</button>
       </div>
     `;
@@ -659,8 +659,15 @@ tablet.addEventListener("click", function (e) {
         </div>
     `;
     getUpdate.removeAttribute('class');
-    getUpdate.classList.add()
-    getUpdate.innerHTML = ``;
+    getUpdate.classList.add("relative", "grid", "top-[125rem]", "border-solid", "place-items-center", "border-2", "shadow-2xl", "m-5", "gap-y-2", "rounded-md");
+    getUpdate.innerHTML = `
+      <span class="font-extrabold text-2xl mt-[3rem] relative">GET UPDATE FROM ANYWHERE</span>
+      <span class="p-4">Can't really trust nobody with all this jewelry on you. My roof look like a no-show</span>
+      <div class="flex gap-x-4 m-[3rem]">
+        <input type="email" placeholder="Enter your email" class="rounded-full border-1 border-gray-200" size="20">
+        <button class="text-white p-2 rounded-full border-2 border-blue-700 bg-blue-700 font-bold border-solid w-[10rem] hover:bg-white hover:text-black">Subscribe Now</button>
+      </div>
+    `;
 });
 
 laptop.addEventListener("click", function (e) {
@@ -1041,8 +1048,15 @@ laptop.addEventListener("click", function (e) {
       </div>
   `;
   getUpdate.removeAttribute('class');
-  getUpdate.classList.add()
-  getUpdate.innerHTML = ``;
+  getUpdate.classList.add("relative", "grid", "top-[90rem]", "border-solid", "place-items-center", "border-2", "shadow-2xl", "m-24", "gap-y-2", "rounded-md");
+  getUpdate.innerHTML = `
+    <span class="font-extrabold text-2xl mt-[3rem] relative">GET UPDATE FROM ANYWHERE</span>
+    <span class="p-4">Can't really trust nobody with all this jewelry on you. My roof look like a no-show</span>
+    <div class="flex gap-x-4 m-[3rem]">
+      <input type="email" placeholder="Enter your email" class="rounded-full border-1 border-gray-200" size="20">
+      <button class="text-white p-2 rounded-full border-2 border-blue-700 bg-blue-700 font-bold border-solid w-[10rem] hover:bg-white hover:text-black">Subscribe Now</button>
+    </div>
+  `;
 });
 
 menu.addEventListener("click", function(e) {
