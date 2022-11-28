@@ -15,7 +15,8 @@ let body = document.querySelector(".main-body"),
     sldesItmsHder = document.querySelector("#slide-items-header"),
     sldesContainer = document.querySelector("#slides-container"),
     latestHder = document.querySelector("#latest-header"),
-    latestNews = document.querySelector("#latest-news");
+    latestNews = document.querySelector("#latest-news"),
+    getUpdate = document.querySelector("#get-update");
 
 mobile.addEventListener("click", function (e) {
     e.preventDefault();
@@ -283,45 +284,55 @@ mobile.addEventListener("click", function (e) {
     latestNews.removeAttribute('class');
     latestNews.classList.add("grid", "relative", "top-[205rem]", "mt-5", "p-2", "gap-12");
     latestNews.innerHTML = `
-        <div>
+        <div class="group">
           <div class="border-solid border-2 border-black h-[20rem] w-[25rem]">picture</div>
           <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
             <span>By Admin</span>
             <span>&#9787 2 Comments</span>
           </div>
-          <span class="font-bold hover:text-blue-600 flex mt-5">No Such Thing As A Life That's Better Than Yours</span>
+          <span class="font-bold group-hover:text-blue-600 flex mt-5">No Such Thing As A Life That's Better Than Yours</span>
           <span class="text-gray-600 flex mt-5">When I met her she was out for love, I bought her leather and some diamond studs..</span>
-          <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+          <div class="flex gap-x-2 font-bold mt-5 group-hover:text-blue-600 group-hover:gap-x-4">
             <span>Read More</span>
             <span>&#8594;</span>
           </div>
         </div>
-        <div>
+        <div class="group">
           <div class="border-solid border-2 border-black h-[20rem] w-[25rem]">picture</div>
           <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
             <span>By Admin</span>
             <span>&#9787 2 Comments</span>
           </div>
-          <span class="font-bold hover:text-blue-600 flex mt-5">No Church In The Wild</span>
+          <span class="font-bold group-hover:text-blue-600 flex mt-5">No Church In The Wild</span>
           <span class="text-gray-600 flex mt-5">You can't stop it, music still playing in the background...</span>
-          <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+          <div class="flex gap-x-2 font-bold mt-5 group-hover:text-blue-600 group-hover:gap-x-4">
             <span>Read More</span>
             <span>&#8594;</span>
           </div>
         </div>
-        <div>
+        <div class="group">
           <div class="border-solid border-2 border-black h-[20rem] w-[25rem]">picture</div>
           <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
             <span>By Admin</span>
             <span>&#9787 2 Comments</span>
           </div>
-          <span class="font-bold hover:text-blue-600 flex mt-5">It Won't Stop</span>
+          <span class="font-bold group-hover:text-blue-600 flex mt-5">It Won't Stop</span>
           <span class="text-gray-600 flex mt-5">All I want is you, So what you trying to do...</span>
-          <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+          <div class="flex gap-x-2 font-bold mt-5 group-hover:text-blue-600 group-hover:gap-x-4">
             <span>Read More</span>
             <span>&#8594;</span>
           </div>
         </div>
+    `;
+    getUpdate.removeAttribute('class');
+    getUpdate.classList.add("relative", "grid", "top-[205rem]", "border-solid", "place-items-center", "border-2", "shadow-2xl", "m-5", "h-[16rem]", "rounded-md", "p-2");
+    getUpdate.innerHTML = `
+      <span class="font-extrabold text-2xl relative">GET UPDATE ANYWHERE</span>
+      <span>Wake up today, anything, anything could happen.</span>
+      <div class="flex gap-x-2">
+        <input type="email" placeholder="Enter your email" class="rounded-full" size="15">
+        <button class="text-white p-2 rounded-full border-2 border-blue-700 bg-blue-700 font-bold border-solid w-[10rem] hover:bg-white hover:text-black">Subscribe Now</button>
+      </div>
     `;
 });
 
@@ -607,46 +618,49 @@ tablet.addEventListener("click", function (e) {
     latestNews.removeAttribute('class');
     latestNews.classList.add("grid", "relative", "grid-cols-2", "top-[125rem]", "m-5", "p-2", "gap-12");
     latestNews.innerHTML = `
-        <div>
+        <div class="group">
           <div class="border-solid border-2 border-black h-[20rem] w-[100%]">picture</div>
           <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
             <span>By Admin</span>
             <span>&#9787 2 Comments</span>
           </div>
-          <span class="font-bold hover:text-blue-600 flex mt-5">No Such Thing As A Life That's Better Than Yours</span>
+          <span class="font-bold group-hover:text-blue-600 flex mt-5">No Such Thing As A Life That's Better Than Yours</span>
           <span class="text-gray-600 flex mt-5">When I met her she was out for love, I bought her leather and some diamond studs..</span>
-          <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+          <div class="flex gap-x-2 font-bold mt-5 group-hover:text-blue-600 group-hover:gap-x-4">
             <span>Read More</span>
             <span>&#8594;</span>
           </div>
         </div>
-        <div>
+        <div class="group">
           <div class="border-solid border-2 border-black h-[20rem] w-[100%]">picture</div>
           <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
             <span>By Admin</span>
             <span>&#9787 2 Comments</span>
           </div>
-          <span class="font-bold hover:text-blue-600 flex mt-5">No Church In The Wild</span>
+          <span class="font-bold group-hover:text-blue-600 flex mt-5">No Church In The Wild</span>
           <span class="text-gray-600 flex mt-5">You can't stop it, music still playing in the background...</span>
-          <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+          <div class="flex gap-x-2 font-bold mt-5 group-hover:text-blue-600 group-hover:gap-x-4">
             <span>Read More</span>
             <span>&#8594;</span>
           </div>
         </div>
-        <div>
+        <div class="group">
           <div class="border-solid border-2 border-black h-[20rem] w-[100%]">picture</div>
           <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
             <span>By Admin</span>
             <span>&#9787 2 Comments</span>
           </div>
-          <span class="font-bold hover:text-blue-600 flex mt-5">It Won't Stop</span>
+          <span class="font-bold group-hover:text-blue-600 flex mt-5">It Won't Stop</span>
           <span class="text-gray-600 flex mt-5">All I want is you, So what you trying to do...</span>
-          <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+          <div class="flex gap-x-2 font-bold mt-5 group-hover:text-blue-600 group-hover:gap-x-4">
             <span>Read More</span>
             <span>&#8594;</span>
           </div>
         </div>
     `;
+    getUpdate.removeAttribute('class');
+    getUpdate.classList.add()
+    getUpdate.innerHTML = ``;
 });
 
 laptop.addEventListener("click", function (e) {
@@ -986,46 +1000,49 @@ laptop.addEventListener("click", function (e) {
   latestNews.removeAttribute('class');
   latestNews.classList.add("grid", "relative", "grid-cols-3", "top-[90rem]", "mx-24", "mt-5", "p-2", "gap-12");
   latestNews.innerHTML = `
-      <div>
+      <div class="group">
         <div class="border-solid border-2 border-black h-[20rem] w-[100%]">picture</div>
         <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
           <span>By Admin</span>
           <span>&#9787 2 Comments</span>
         </div>
-        <span class="font-bold hover:text-blue-600 flex mt-5">No Such Thing As A Life That's Better Than Yours</span>
+        <span class="font-bold group-hover:text-blue-600 flex mt-5">No Such Thing As A Life That's Better Than Yours</span>
         <span class="text-gray-600 flex mt-5">When I met her she was out for love, I bought her leather and some diamond studs..</span>
-        <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+        <div class="flex gap-x-2 font-bold mt-5 group-hover:text-blue-600 group-hover:gap-x-4">
           <span>Read More</span>
           <span>&#8594;</span>
         </div>
       </div>
-      <div>
+      <div class="group">
         <div class="border-solid border-2 border-black h-[20rem] w-[100%]">picture</div>
         <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
           <span>By Admin</span>
           <span>&#9787 2 Comments</span>
         </div>
-        <span class="font-bold hover:text-blue-600 flex mt-5">No Church In The Wild</span>
+        <span class="font-bold group-hover:text-blue-600 flex mt-5">No Church In The Wild</span>
         <span class="text-gray-600 flex mt-5">You can't stop it, music still playing in the background...</span>
-        <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+        <div class="flex gap-x-2 font-bold mt-5 group-hover:text-blue-600 group-hover:gap-x-4">
           <span>Read More</span>
           <span>&#8594;</span>
         </div>
       </div>
-      <div>
+      <div class="group">
         <div class="border-solid border-2 border-black h-[20rem] w-[100%]">picture</div>
         <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
           <span>By Admin</span>
           <span>&#9787 2 Comments</span>
         </div>
-        <span class="font-bold hover:text-blue-600 flex mt-5">It Won't Stop</span>
+        <span class="font-bold group-hover:text-blue-600 flex mt-5">It Won't Stop</span>
         <span class="text-gray-600 flex mt-5">All I want is you, So what you trying to do...</span>
-        <div class="flex gap-x-2 font-bold mt-5 hover:text-blue-600 hover:gap-x-4">
+        <div class="flex gap-x-2 font-bold mt-5 group-hover:text-blue-600 group-hover:gap-x-4">
           <span>Read More</span>
           <span>&#8594;</span>
         </div>
       </div>
   `;
+  getUpdate.removeAttribute('class');
+  getUpdate.classList.add()
+  getUpdate.innerHTML = ``;
 });
 
 menu.addEventListener("click", function(e) {
