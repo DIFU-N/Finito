@@ -280,8 +280,9 @@ mobile.addEventListener("click", function (e) {
         <p id="latest-header-3" class="text-3xl py-2 font-extrabold border-solid border-b-2 border-blue-700 relative">News</p>
       </div>
     `;
+    latestNews.removeAttribute('class');
+    latestNews.classList.add("grid", "relative", "top-[205rem]", "mt-5", "p-2", "gap-12");
     latestNews.innerHTML = `
-      <div class="grid relative top-[205rem] mt-5 p-2 gap-12">
         <div>
           <div class="border-solid border-2 border-black h-[20rem] w-[25rem]">picture</div>
           <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
@@ -321,7 +322,6 @@ mobile.addEventListener("click", function (e) {
             <span>&#8594;</span>
           </div>
         </div>
-      </div>
     `;
 });
 
@@ -604,8 +604,9 @@ tablet.addEventListener("click", function (e) {
         <p id="latest-header-3" class="text-4xl py-2 font-extrabold border-solid border-b-2 border-blue-700 relative">News</p>
       </div>
     `;
-    latestNews = `
-      <div class="grid relative grid-cols-2 top-[125rem] m-5 p-2 gap-12">
+    latestNews.removeAttribute('class');
+    latestNews.classList.add("grid", "relative", "grid-cols-2", "top-[125rem]", "m-5", "p-2", "gap-12");
+    latestNews.innerHTML = `
         <div>
           <div class="border-solid border-2 border-black h-[20rem] w-[100%]">picture</div>
           <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
@@ -645,7 +646,6 @@ tablet.addEventListener("click", function (e) {
             <span>&#8594;</span>
           </div>
         </div>
-      </div>
     `;
 });
 
@@ -983,8 +983,9 @@ laptop.addEventListener("click", function (e) {
       <p id="latest-header-3" class="text-4xl py-2 font-extrabold border-solid border-b-2 border-blue-700 relative">News</p>
     </div>
   `;
+  latestNews.removeAttribute('class');
+  latestNews.classList.add("grid", "relative", "grid-cols-3", "top-[90rem]", "mx-24", "mt-5", "p-2", "gap-12");
   latestNews.innerHTML = `
-    <div class="grid relative grid-cols-3 top-[90rem] mx-24 mt-5 p-2 gap-12">
       <div>
         <div class="border-solid border-2 border-black h-[20rem] w-[100%]">picture</div>
         <div class="flex mt-5 gap-x-6 text-sm text-gray-600">
@@ -1024,7 +1025,6 @@ laptop.addEventListener("click", function (e) {
           <span>&#8594;</span>
         </div>
       </div>
-    </div>
   `;
 });
 
