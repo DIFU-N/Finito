@@ -16,7 +16,8 @@ let body = document.querySelector(".main-body"),
     sldesContainer = document.querySelector("#slides-container"),
     latestHder = document.querySelector("#latest-header"),
     latestNews = document.querySelector("#latest-news"),
-    getUpdate = document.querySelector("#get-update");
+    getUpdate = document.querySelector("#get-update"),
+    footer = document.querySelector("#footer");
 
 mobile.addEventListener("click", function (e) {
     e.preventDefault();
@@ -332,6 +333,61 @@ mobile.addEventListener("click", function (e) {
       <div class="flex gap-x-2">
         <input type="email" placeholder="Enter your email" class="rounded-full border-1 border-gray-200" size="15">
         <button class="text-white p-2 rounded-full border-2 border-blue-700 bg-blue-700 font-bold border-solid w-[10rem] hover:bg-white hover:text-black">Subscribe Now</button>
+      </div>
+    `;
+    footer.removeAttribute('class');
+    footer.classList.add("bg-sky-900", "p-3", "relative", "top-[205rem]", "pt-10", "grid");
+    footer.innerHTML = `
+      <span class="text-white mb-2 font-extrabold">Our Mission</span>
+      <span class="text-gray-400 text-xs mb-2">You're the only one that makes me wait all the time. Oh yh you blow my mind. boom boom you blow my mind You're the only one that gets under my skin, you're doing damage that nobody's ever did. </span>
+      <span class="text-gray-400 mb-6 text-xs">What are you willing to do, tell me what you're willing to do. Kiss it kiss it better baby.</span>
+      <span class="text-white mb-2 font-extrabold">Our Links</span>
+      <span class="text-gray-400 mb-2 cursor-pointer hover:text-blue-700 text-sm">Home</span>
+      <span class="text-gray-400 mb-2 cursor-pointer hover:text-blue-700 text-sm">Shop</span>
+      <span class="text-gray-400 mb-2 cursor-pointer hover:text-blue-700 text-sm">Blog</span>
+      <span class="text-gray-400 mb-2 cursor-pointer hover:text-blue-700 text-sm">Product</span>
+      <span class="text-gray-400 mb-2 cursor-pointer hover:text-blue-700 text-sm">Brand</span>
+      <span class="text-gray-400 mb-4 cursor-pointer hover:text-blue-700 text-sm">Contact</span>
+      <span class="text-white mb-2 font-extrabold">Gallery</span>
+      <div class="flex grid grid-cols-6 relative gap-2 mb-6">
+        <div class="border-2 border-black border-solid h-14 w-14">aa</div>
+        <div class="border-2 border-black border-solid h-14 w-14">aa</div>
+        <div class="border-2 border-black border-solid h-14 w-14">aa</div>
+        <div class="border-2 border-black border-solid h-14 w-14">aa</div>
+        <div class="border-2 border-black border-solid h-14 w-14">aa</div>
+        <div class="border-2 border-black border-solid h-14 w-14">aa</div>
+        <div class="border-2 border-black border-solid h-14 w-14">aa</div>
+      </div>
+      <span class="text-white mb-2 font-extrabold">Contact Us</span>
+      <div class="grid">
+        <div class="flex gap-x-4 mb-4">
+          <span class="border-2 border-black border-solid h-8 w-8 bg-blue-600 p-1 rounded-full"><img src="https://img.icons8.com/ios-filled/50/null/address--v1.png"/></span>
+          <div>
+            <span class="font-bold text-white text-sm">Head Office</span>
+            <br>
+            <span class="text-gray-400 text-sm">123, Main Street, City</span>
+          </div>
+        </div>
+        <div class="flex gap-x-4 mb-4">
+          <span class="border-2 border-black border-solid h-8 w-8 bg-blue-600 p-1 rounded-full"><img src="https://img.icons8.com/ios-filled/50/000000/phone.png"/></span>
+          <div>
+            <span class="font-bold text-white text-sm">Phone Number</span>
+            <br>
+            <span class="text-gray-400 text-sm">+123 456 7890</span>
+            <br>
+            <span class="text-gray-400 text-sm">+134 259 9870</span>
+          </div>
+        </div>
+        <div class="flex gap-x-4 mb-4">
+          <span class="border-2 border-black border-solid h-8 w-8 bg-blue-600 p-1 rounded-full"><img src="https://img.icons8.com/ios/50/null/secured-letter--v1.png"/></span>
+          <div>
+            <span class="font-bold text-white text-sm">Email</span>
+            <br>
+            <span class="text-gray-400 text-sm">okayletsgohome@gmail.com</span>
+            <br>
+            <span class="text-gray-400 text-sm">fritstimeletsgohome@gmail.com</span>
+          </div>
+        </div>
       </div>
     `;
 });
