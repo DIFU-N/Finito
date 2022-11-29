@@ -213,11 +213,11 @@ mobile.addEventListener("click", function (e) {
     `;
     sldesContainer.removeAttribute('class');
     sldesContainer.classList.add("h-[50rem]", "top-[205rem]", "w-[100%]", "relative");
-    sldesContainer.setAttribute('data-carousel', "static");
+    sldesContainer.setAttribute("data-carousel", "static");
     // add the hidden attribute to the carousel-item classes
     sldesContainer.innerHTML = `
-    <div class="h-[100%] m-3">
-      <div id="carousel-item" class="group h-[70%] duration-300 ease-in-out rounded-lg bg-yellow-100" data-carousel-item="active">
+    <div class="h-[100%] m-3 overflow-hidden relative">
+      <div id="carousel-item" class="group h-[70%] duration-300 ease-in-out rounded-lg bg-yellow-100" data-carousel-item>
         <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
           <span class="border-solid border-2 border-black p-2">&#8750;</span>
           <span class="border-solid border-2 border-black p-2">&#8751;</span>
@@ -229,7 +229,7 @@ mobile.addEventListener("click", function (e) {
           <p class="text-gray-600">$150.00</p>
         </div>
       </div>
-      <div id="carousel-item" class="group h-[70%] duration-300 bg-green-500 ease-in-out" data-carousel-item>
+      <div id="carousel-item" class="group h-[70%] duration-300 bg-green-500 ease-in-out" data-carousel-item="active">
         <div class="flex group-hover:visible invisible justify-center space-x-4 absolute bottom-0 h-[6rem] place-items-center w-[100%] border-2 border-black">
           <span class="border-solid border-2 border-black p-2">&#8750;</span>
           <span class="border-solid border-2 border-black p-2">&#8751;</span>
@@ -724,6 +724,69 @@ tablet.addEventListener("click", function (e) {
         <button class="text-white p-2 rounded-full border-2 border-blue-700 bg-blue-700 font-bold border-solid w-[10rem] hover:bg-white hover:text-black">Subscribe Now</button>
       </div>
     `;
+    footer.removeAttribute('class');
+    footer.classList.add("bg-sky-900", "p-3", "flex", "relative", "top-[125rem]", "pt-16", "grid", "grid-cols-2", "gap-10");
+    footer.innerHTML = `
+      <div class="grid">
+        <span class="text-white font-extrabold text-lg">Our Mission</span>
+        <span class="text-gray-400 text-base">Ain't no C in green but I'm seeing green, Even with them floor seats they couldn't see the team, The K-I-N-G, The GOAT, plus me, the Queen.</span>
+        <span class="text-gray-400 text-base">I can make the news with it, break the internet. Have em all nervous and scared of me.</span>
+      </div>
+      <div class="grid">
+        <span class="text-white mb-2 font-extrabold text-lg">Our Links</span>
+        <span class="text-gray-400 mb-2 cursor-pointer hover:text-blue-700 text-base">Home</span>
+        <span class="text-gray-400 mb-2 cursor-pointer hover:text-blue-700 text-base">Shop</span>
+        <span class="text-gray-400 mb-2 cursor-pointer hover:text-blue-700 text-base">Blog</span>
+        <span class="text-gray-400 mb-2 cursor-pointer hover:text-blue-700 text-base">Product</span>
+        <span class="text-gray-400 mb-2 cursor-pointer hover:text-blue-700 text-base">Brand</span>
+        <span class="text-gray-400 mb-4 cursor-pointer hover:text-blue-700 text-base">Contact</span>    
+      </div>
+      <div class="grid">
+        <span class="text-white mb-2 font-extrabold text-lg">Gallery</span>
+        <div class="flex grid grid-cols-5 relative gap-2 mb-6">
+          <div class="border-2 border-black border-solid h-16 w-16">aa</div>
+          <div class="border-2 border-black border-solid h-16 w-16">aa</div>
+          <div class="border-2 border-black border-solid h-16 w-16">aa</div>
+          <div class="border-2 border-black border-solid h-16 w-16">aa</div>
+          <div class="border-2 border-black border-solid h-16 w-16">aa</div>
+          <div class="border-2 border-black border-solid h-16 w-16">aa</div>
+          <div class="border-2 border-black border-solid h-16 w-16">aa</div>
+        </div>  
+      </div>
+      <div class="grid">
+        <span class="text-white mb-2 font-extrabold text-lg">Contact Us</span>
+        <div class="grid">
+          <div class="flex gap-x-4 mb-4">
+            <span class="border-2 border-black border-solid h-8 w-8 bg-blue-600 p-1 rounded-full"><img src="https://img.icons8.com/ios-filled/50/null/address--v1.png"/></span>
+            <div>
+              <span class="font-bold text-white text-base">Head Office</span>
+              <br>
+              <span class="text-gray-400 text-base">123, Main Street, City</span>
+            </div>
+          </div>
+          <div class="flex gap-x-4 mb-4">
+            <span class="border-2 border-black border-solid h-8 w-8 bg-blue-600 p-1 rounded-full"><img src="https://img.icons8.com/ios-filled/50/000000/phone.png"/></span>
+            <div>
+              <span class="font-bold text-white text-base">Phone Number</span>
+              <br>
+              <span class="text-gray-400 text-base">+123 456 7890</span>
+              <br>
+              <span class="text-gray-400 text-base">+134 259 9870</span>
+            </div>
+          </div>
+          <div class="flex gap-x-4 mb-4">
+            <span class="border-2 border-black border-solid h-8 w-8 bg-blue-600 p-1 rounded-full"><img src="https://img.icons8.com/ios/50/null/secured-letter--v1.png"/></span>
+            <div>
+              <span class="font-bold text-white text-base">Email</span>
+              <br>
+              <span class="text-gray-400 text-base">okayletsgohome@gmail.com</span>
+              <br>
+              <span class="text-gray-400 text-base">fritstimeletsgohome@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
 });
 
 laptop.addEventListener("click", function (e) {
@@ -1103,15 +1166,81 @@ laptop.addEventListener("click", function (e) {
         </div>
       </div>
   `;
+  // get update and footer together
+  footer.removeAttribute('class');
+  footer.innerHTML = ``;
   getUpdate.removeAttribute('class');
-  getUpdate.classList.add("relative", "grid", "top-[90rem]", "border-solid", "place-items-center", "border-2", "shadow-2xl", "m-24", "gap-y-2", "rounded-md");
+  getUpdate.classList.add("relative", "top-[90rem]");
   getUpdate.innerHTML = `
-    <span class="font-extrabold text-2xl mt-[3rem] relative">GET UPDATE FROM ANYWHERE</span>
-    <span class="p-4">Can't really trust nobody with all this jewelry on you. My roof look like a no-show</span>
-    <div class="flex gap-x-4 m-[3rem]">
-      <input type="email" placeholder="Enter your email" class="rounded-full border-1 border-gray-200" size="20">
-      <button class="text-white p-2 rounded-full border-2 border-blue-700 bg-blue-700 font-bold border-solid w-[10rem] hover:bg-white hover:text-black">Subscribe Now</button>
+    <div class="z-10 w-[70rem] absolute bg-white grid border-solid place-items-center border-2 shadow-2xl m-24 gap-y-2 rounded-md">
+      <span class="font-extrabold text-2xl mt-[3rem] relative">GET UPDATE FROM ANYWHERE</span>
+      <span class="p-4">Can't really trust nobody with all this jewelry on you. My roof look like a no-show</span>
+      <div class="flex gap-x-4 m-[3rem]">
+        <input type="email" placeholder="Enter your email" class="rounded-full border-1 border-gray-200" size="20">
+        <button class="text-white p-2 rounded-full border-2 border-blue-700 bg-blue-700 font-bold border-solid w-[10rem] hover:bg-white hover:text-black">Subscribe Now</button>
+      </div>
     </div>
+    <footer id="footer" class="bg-sky-900 absolute mt-[16rem] px-36 flex pt-52 pb-16 grid grid-cols-4 gap-12 border-2 border-black">
+      <div class="grid">
+        <span class="text-white font-extrabold text-3xl">Our Mission</span>
+        <span class="text-gray-400 text-lg">I got one coming over and one right now, one right now... Don't call me "baby" when you did me so wrong</span>
+        <span class="text-gray-400 text-lg">I woke up on the wrong side of love, no candle no light for you</span>
+      </div>
+      <div class="grid">
+        <span class="text-white mb-2 font-extrabold text-lg">Our Links</span>
+        <span class="text-gray-400 mb-2 cursor-pointer hover:text-blue-700 text-base">Home</span>
+        <span class="text-gray-400 mb-2 cursor-pointer hover:text-blue-700 text-base">Shop</span>
+        <span class="text-gray-400 mb-2 cursor-pointer hover:text-blue-700 text-base">Blog</span>
+        <span class="text-gray-400 mb-2 cursor-pointer hover:text-blue-700 text-base">Product</span>
+        <span class="text-gray-400 mb-2 cursor-pointer hover:text-blue-700 text-base">Brand</span>
+        <span class="text-gray-400 mb-4 cursor-pointer hover:text-blue-700 text-base">Contact</span>    
+      </div>
+      <div class="grid">
+        <span class="text-white mb-2 font-extrabold text-lg">Gallery</span>
+        <div class="flex grid grid-cols-2 relative gap-2">
+          <div class="border-2 border-black border-solid h-16 w-16">aa</div>
+          <div class="border-2 border-black border-solid h-16 w-16">aa</div>
+          <div class="border-2 border-black border-solid h-16 w-16">aa</div>
+          <div class="border-2 border-black border-solid h-16 w-16">aa</div>
+          <div class="border-2 border-black border-solid h-16 w-16">aa</div>
+          <div class="border-2 border-black border-solid h-16 w-16">aa</div>
+          <div class="border-2 border-black border-solid h-16 w-16">aa</div>
+        </div>  
+      </div>
+      <div class="grid">
+        <span class="text-white mb-2 font-extrabold text-lg">Contact Us</span>
+        <div class="grid">
+          <div class="flex gap-x-4 mb-4">
+            <span class="border-2 border-black border-solid h-8 w-8 bg-blue-600 p-1 rounded-full"><img src="https://img.icons8.com/ios-filled/50/null/address--v1.png"/></span>
+            <div>
+              <span class="font-bold text-white text-base">Head Office</span>
+              <br>
+              <span class="text-gray-400 text-base">123, Main Street, City</span>
+            </div>
+          </div>
+          <div class="flex gap-x-4 mb-4">
+            <span class="border-2 border-black border-solid h-8 w-8 bg-blue-600 p-1 rounded-full"><img src="https://img.icons8.com/ios-filled/50/000000/phone.png"/></span>
+            <div>
+              <span class="font-bold text-white text-base">Phone Number</span>
+              <br>
+              <span class="text-gray-400 text-base">+123 456 7890</span>
+              <br>
+              <span class="text-gray-400 text-base">+134 259 9870</span>
+            </div>
+          </div>
+          <div class="flex gap-x-4 mb-4">
+            <span class="border-2 border-black border-solid h-8 w-8 bg-blue-600 p-1 rounded-full"><img src="https://img.icons8.com/ios/50/null/secured-letter--v1.png"/></span>
+            <div>
+              <span class="font-bold text-white text-base">Email</span>
+              <br>
+              <span class="text-gray-400 text-base">okayletsgohome@gmail.com</span>
+              <br>
+              <span class="text-gray-400 text-base">fritstimeletsgohome@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   `;
 });
 
